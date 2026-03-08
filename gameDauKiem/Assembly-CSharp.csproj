@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DebugEnemies.cs" />
     <Compile Include="Assets\ParallaxLayer.cs" />
     <Compile Include="Assets\EnemyController.cs" />
     <Compile Include="Assets\PlayerController.cs" />

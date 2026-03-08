@@ -237,7 +237,8 @@ GameObject:
   - component: {fileID: 133743208}
   - component: {fileID: 133743207}
   - component: {fileID: 133743206}
-  m_Layer: 6
+  - component: {fileID: 133743209}
+  m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,6 +392,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &133743209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133743204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a7cd1d2ad3526468284f612dd8048d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  maxHealth: 3
+  moveSpeed: 2
+  patrolDistance: 3
+  attackRange: 1.5
+  attackDamage: 1
+  attackCooldown: 1.5
 --- !u!1 &307277082
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,9 +574,9 @@ GameObject:
   - component: {fileID: 397313661}
   - component: {fileID: 397313662}
   - component: {fileID: 397313663}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,7 +649,7 @@ Transform:
   m_GameObject: {fileID: 397313656}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.55, y: -1.07, z: 0}
+  m_LocalPosition: {x: 1.85, y: -2.94, z: 0}
   m_LocalScale: {x: 0.94687486, y: 1.0277971, z: 0.9486793}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -654,7 +673,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 7d1483476ad82f64c9ad2b0e9d5b272b, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -680,11 +699,17 @@ MonoBehaviour:
   moveSpeed: 12
   jumpForce: 10
   groundCheck: {fileID: 2142048591}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
   groundCheckRadius: 0.2
   airControlMultiplier: 0.4
   maxHealth: 5
   attackPoint: {fileID: 688199154}
   attackRadius: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
   attackDamage: 1
 --- !u!95 &397313662
 Animator:
@@ -910,12 +935,9 @@ MonoBehaviour:
   maxHealth: 3
   moveSpeed: 2
   patrolDistance: 3
-  chaseRange: 5
-  attackRange: 3
+  attackRange: 1.5
   attackDamage: 1
   attackCooldown: 1.5
-  attackDuration: 0.8
-  groundCheckRadius: 0.2
 --- !u!212 &516872802
 SpriteRenderer:
   serializedVersion: 2
@@ -1037,7 +1059,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 6200000, guid: 7d1483476ad82f64c9ad2b0e9d5b272b, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1057,8 +1079,8 @@ Transform:
   m_GameObject: {fileID: 516872800}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.81, y: -0.9, z: 0}
-  m_LocalScale: {x: 3.1473598, y: 4.0490046, z: 1}
+  m_LocalPosition: {x: -0.23, y: -2.17, z: 0}
+  m_LocalScale: {x: 2.6032765, y: 3.0292525, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 133743205}
@@ -1250,7 +1272,8 @@ GameObject:
   - component: {fileID: 558148661}
   - component: {fileID: 558148660}
   - component: {fileID: 558148659}
-  m_Layer: 8
+  - component: {fileID: 558148662}
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1371,12 +1394,26 @@ Transform:
   m_GameObject: {fileID: 558148658}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.43, y: -3.8, z: 0}
-  m_LocalScale: {x: 88.83566, y: 1, z: 1}
+  m_LocalPosition: {x: 0.25, y: -4.53, z: 0}
+  m_LocalScale: {x: 34.985897, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &558148662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558148658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ddd14deaf258540bd253771fc9d838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ParallaxLayer
+  cameraTransform: {fileID: 519420032}
+  parallaxEffect: 1
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,7 +1507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 688199154}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2607,7 +2644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2142048591}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
