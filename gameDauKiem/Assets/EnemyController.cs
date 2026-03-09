@@ -9,13 +9,14 @@ public class EnemyController : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 2f;
     public float patrolDistance = 3f;
-    public float chaseRange = 4f;  // ✅ THÊM: Khoảng cách đuổi theo Player
+    public float chaseRange = 5f;
 
     [Header("Combat")]
-    public float attackRange = 2f;  // ✅ TĂNG từ 1.5 → 2.0
+    public float attackRange = 3f;
     public int attackDamage = 1;
     public float attackCooldown = 1.5f;
     public float attackDuration = 0.8f;
+    public float attackDamageDelay = 0.3f;  // ✅ THÊM: Delay trước khi deal damage
 
     [Header("Ground Check")]
     public float groundCheckRadius = 0.5f;
@@ -26,11 +27,12 @@ public class EnemyController : MonoBehaviour
     private Transform player;
     private Vector3 startPos;
     private int direction = 1;
-    private float originalScaleX;  // ✅ LƯU scale gốc
+    private float originalScaleX;
     private Animator anim;
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isAttacking = false;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -39,7 +41,6 @@ public class EnemyController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        // ✅ DEBUG: In ra vị trí và parent của Enemy
         Debug.Log($"🎯 ENEMY FOUND AT: {transform.position}, Parent: {transform.parent?.name ?? "NULL"}, GameObject: {gameObject.name}");
 
         groundCheck = transform.Find("GroundCheck");
@@ -63,16 +64,14 @@ public class EnemyController : MonoBehaviour
 
         Debug.Log($"🔥 ENEMY START - AttackRange: {attackRange}, ChaseRange: {chaseRange}");
     }
+
     void FixedUpdate()
     {
         if (player == null) return;
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // ✅ THÊM DEBUG NÀY
-        Debug.Log($"🟢 isGrounded: {isGrounded} | Velocity: {rb.linearVelocity.x:F2}");
-
-        // ✅ CANCEL attack nếu Player xa quá
+        // Cancel attack nếu Player xa quá
         if (isAttacking)
         {
             float distToPlayer = Vector2.Distance(transform.position, player.position);
@@ -90,14 +89,10 @@ public class EnemyController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
-        else
-        {
-            // ✅ THÊM DEBUG KHI KHÔNG GROUNDED
-            Debug.LogWarning("⚠️ ENEMY NOT GROUNDED! Falling or blocked!");
-        }
 
         CheckAttack();
     }
+
     void CancelAttack()
     {
         isAttacking = false;
@@ -108,7 +103,10 @@ public class EnemyController : MonoBehaviour
         {
             anim.ResetTrigger("Attack");
         }
+
+        Debug.Log("⚠️ Attack cancelled!");
     }
+
     void Patrol()
     {
         if (player == null) return;
@@ -116,26 +114,12 @@ public class EnemyController : MonoBehaviour
         float distToPlayer = Vector2.Distance(transform.position, player.position);
         float distToStart = Mathf.Abs(transform.position.x - startPos.x);
 
-        // ✅ DEBUG
-        string state = "";
-        if (distToPlayer <= attackRange)
-            state = "STOP";
-        else if (distToPlayer <= chaseRange)
-            state = "CHASE";
-        else
-            state = "PATROL";
-
-        Debug.Log($"🤖 {state} | Dist: {distToPlayer:F2} | Pos: {transform.position.x:F2} | Start: {startPos.x:F2} | Dir: {direction}");
-
-        // ==========================================
-        // ✅ CASE 1: GẦN PLAYER - Dừng lại, quay mặt
-        // ==========================================
+        // CASE 1: GẦN PLAYER - Dừng lại, quay mặt
         if (distToPlayer <= attackRange)
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             if (anim != null) anim.SetBool("isWalking", false);
 
-            // Quay mặt về Player
             int faceDir = (player.position.x > transform.position.x) ? 1 : -1;
             if (faceDir != direction)
             {
@@ -143,51 +127,39 @@ public class EnemyController : MonoBehaviour
                 Flip();
             }
         }
-        // ==========================================
-        // ✅ CASE 2: CHASE - Đuổi theo Player (trong chaseRange)
-        // ==========================================
+        // CASE 2: CHASE - Đuổi theo Player
         else if (distToPlayer <= chaseRange)
         {
             if (anim != null) anim.SetBool("isWalking", true);
 
-            // Xác định hướng chase
             int chaseDir = (player.position.x > transform.position.x) ? 1 : -1;
 
-            // CHỈ flip khi cần thiết
             if (chaseDir != direction)
             {
                 direction = chaseDir;
                 Flip();
             }
 
-            // Di chuyển nhanh về phía Player
             rb.linearVelocity = new Vector2(direction * moveSpeed * 1.5f, rb.linearVelocity.y);
         }
-        // ==========================================
-        // ✅ CASE 3: PATROL - Player quá xa, tuần tra quanh startPos
-        // ==========================================
+        // CASE 3: PATROL - Tuần tra
         else
         {
             if (anim != null) anim.SetBool("isWalking", true);
 
-            // 🔄 Nếu đi quá xa startPos → quay về
             if (distToStart > patrolDistance)
             {
-                // Xác định hướng về startPos
                 int returnDir = (startPos.x > transform.position.x) ? 1 : -1;
 
                 if (returnDir != direction)
                 {
                     direction = returnDir;
                     Flip();
-                    Debug.Log("🔄 Turning back to start");
                 }
             }
 
-            // Di chuyển theo hướng hiện tại
             rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
 
-            // ⚠️ Kiểm tra STUCK (va tường)
             if (Mathf.Abs(rb.linearVelocity.x) < 0.1f && moveSpeed > 0)
             {
                 Debug.LogWarning("🚫 STUCK! Reversing...");
@@ -196,9 +168,9 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
+
     void Flip()
     {
-        // ✅ FIX: Giữ nguyên scale gốc, chỉ đổi hướng
         Vector3 scale = transform.localScale;
         scale.x = originalScaleX * direction;
         transform.localScale = scale;
@@ -210,48 +182,64 @@ public class EnemyController : MonoBehaviour
 
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // ✅ DEBUG: Xem enemy đang ở trạng thái nào
-        Debug.Log($"Distance: {distToPlayer:F2}, AttackRange: {attackRange}, isAttacking: {isAttacking}");
-
-        if (distToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
+        // CHỈ ATTACK khi trong chaseRange
+        if (distToPlayer <= attackRange && distToPlayer <= chaseRange && Time.time >= lastAttackTime + attackCooldown)
         {
             isAttacking = true;
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
 
             if (anim != null)
             {
-                anim.SetBool("isWalking", false);  // ✅ TẮT walking trước
+                anim.SetBool("isWalking", false);
                 anim.ResetTrigger("Attack");
                 anim.SetTrigger("Attack");
             }
 
-            Invoke("DealDamageToPlayer", 0.3f);
+            // ✅ Schedule damage với delay có thể customize
+            Invoke("DealDamageToPlayer", attackDamageDelay);
             Invoke("EndAttack", attackDuration);
 
             lastAttackTime = Time.time;
-            Debug.Log("🗡️ ATTACK TRIGGERED!");
+            Debug.Log("🗡️ ENEMY ATTACK TRIGGERED!");
         }
     }
 
+    // ✅ IMPROVED: Thêm nhiều debug log hơn
     void DealDamageToPlayer()
     {
-        if (player == null) return;
+        if (player == null)
+        {
+            Debug.LogError("❌ Player is NULL!");
+            return;
+        }
 
         float distToPlayer = Vector2.Distance(transform.position, player.position);
+
+        Debug.Log($"🗡️ Enemy trying to deal damage! Distance: {distToPlayer:F2}, AttackRange: {attackRange}");
+
         if (distToPlayer <= attackRange)
         {
             PlayerController playerCtrl = player.GetComponent<PlayerController>();
             if (playerCtrl != null)
             {
                 playerCtrl.TakeDamage(attackDamage);
-                Debug.Log("🗡️ Enemy HIT Player!");
+                Debug.Log($"💥 Enemy HIT Player! Dealt {attackDamage} damage!");
             }
+            else
+            {
+                Debug.LogError("❌ Player doesn't have PlayerController component!");
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"⚠️ Player too far to hit! Distance: {distToPlayer:F2} > AttackRange: {attackRange}");
         }
     }
 
     void EndAttack()
     {
         isAttacking = false;
+        Debug.Log("✅ Attack animation finished");
     }
 
     public void TakeDamage(int damage)
@@ -263,6 +251,12 @@ public class EnemyController : MonoBehaviour
         {
             Die();
         }
+    }
+
+    // ✅ Getter cho UI
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
     }
 
     void Die()

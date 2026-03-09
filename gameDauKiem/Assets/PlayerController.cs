@@ -1,5 +1,4 @@
-﻿using Mono.Cecil.Cil;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,9 +23,10 @@ public class PlayerController : MonoBehaviour
     public Transform attackPoint;
     public float attackRadius = 0.5f;
     public int attackDamage = 1;
+    public float attackDelay = 0.3f;  // Thời gian đến khi damage được deal
 
-    private LayerMask groundLayer;  // ← BỎ PUBLIC
-    private LayerMask enemyLayer;   // ← BỎ PUBLIC
+    private LayerMask groundLayer;
+    private LayerMask enemyLayer;
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sr;
@@ -45,7 +45,6 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        // ✅ FORCE SET LAYERS
         groundLayer = LayerMask.GetMask("Ground");
         enemyLayer = LayerMask.GetMask("Enemy");
         Debug.Log($"✅ Player Ground Layer: {groundLayer.value}, Enemy Layer: {enemyLayer.value}");
@@ -68,16 +67,22 @@ public class PlayerController : MonoBehaviour
             Debug.Log($"🔥 JUMP! Velocity Y: {rb.linearVelocity.y}");
         }
 
+        // ✅ FIX: Gọi AttackSequence thay vì chỉ set animation
         if (Mouse.current.leftButton.wasPressedThisFrame && !isAttacking)
         {
             isAttacking = true;
             anim.SetTrigger("Attack");
-            StartCoroutine(ResetAttackAfterDelay(0.6f));
+            StartCoroutine(AttackSequence());
         }
 
         anim.SetFloat("Speed", Mathf.Abs(moveInput));
         anim.SetFloat("YVelocity", rb.linearVelocity.y);
         anim.SetBool("Grounded", isGrounded);
+
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, -8f, 8f); // chỉnh -8 và 8 theo map của bạn
+        transform.position = pos;
+
     }
 
     void FixedUpdate()
@@ -104,32 +109,54 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log($"💔 Player HP: {currentHealth}/{maxHealth}");
         if (currentHealth <= 0)
         {
-            Debug.Log("💀 Player Died!");
+            FindFirstObjectByType<GameManager>()?.PlayerDied();
         }
     }
 
+    // ✅ Getter cho UI
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    // ✅ ĐƯỢC GỌI TỪ AttackSequence hoặc Animation Event
     public void DealDamage()
     {
+        Debug.Log("🗡️ Player DealDamage() called!");
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, enemyLayer);
+
+        Debug.Log($"🔍 Found {hits.Length} enemies in attack range");
+
         foreach (Collider2D hit in hits)
         {
             EnemyController enemy = hit.GetComponent<EnemyController>();
             if (enemy != null)
             {
                 enemy.TakeDamage(attackDamage);
+                Debug.Log($"💥 Player HIT {enemy.gameObject.name}! Dealt {attackDamage} damage!");
             }
         }
     }
 
-    private IEnumerator ResetAttackAfterDelay(float delay)
+    // ✅ NEW: Sequence attack có delay
+    private IEnumerator AttackSequence()
     {
-        yield return new WaitForSeconds(delay);
+        // Chờ đến khi tay vung đến (giữa animation)
+        yield return new WaitForSeconds(attackDelay);
+
+        // Gây damage
+        DealDamage();
+
+        // Chờ animation kết thúc
+        yield return new WaitForSeconds(0.6f - attackDelay);
+
         isAttacking = false;
     }
 
+    // ✅ Có thể gọi từ Animation Event nếu dùng phương pháp 1
     public void OnAttackFinished()
     {
         isAttacking = false;
