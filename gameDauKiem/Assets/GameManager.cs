@@ -107,6 +107,10 @@ public class GameManager : MonoBehaviour
     // ✅ HÀM MỚI: Load next level
     public void LoadNextLevel()
     {
+
+        Debug.Log("🔥 NEXT LEVEL BUTTON CLICKED!"); // ← THÊM DÒNG NÀY
+
+
         Time.timeScale = 1f;  // Reset time scale
 
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

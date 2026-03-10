@@ -79,9 +79,9 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("YVelocity", rb.linearVelocity.y);
         anim.SetBool("Grounded", isGrounded);
 
-        Vector3 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, -8f, 8f); // chỉnh -8 và 8 theo map của bạn
-        transform.position = pos;
+        //Vector3 pos = transform.position;
+        //pos.x = Mathf.Clamp(pos.x, -8f, 8f); // chỉnh -8 và 8 theo map của bạn
+        //transform.position = pos;
 
     }
 
