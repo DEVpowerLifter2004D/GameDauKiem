@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform[] spawnPoints;
     public float spawnCooldown = 2f;  // Cooldown giữa mỗi lần spawn
+    public int maxEnemies = 5;        // ✅ THÊM: Giới hạn số lượng quái
 
     [Header("Game Rules")]
     public float survivalTime = 30f;  // Thời gian cần sống sót (30s hoặc 300s cho 5 phút)
@@ -45,10 +46,17 @@ public class GameManager : MonoBehaviour
             return;  // Dừng spawn
         }
 
-        // ✅ SPAWN VÔ HẠN: Chỉ spawn khi chưa hết giờ
+        // ✅ SPAWN CÓ GIỚI HẠN: Chỉ spawn khi chưa hết giờ và chưa đủ quái
         if (Time.time >= nextSpawnTime)
         {
-            SpawnEnemy();
+            // Kiểm tra số lượng quái hiện có trong Scene
+            EnemyController[] currentEnemies = FindObjectsOfType<EnemyController>();
+            
+            if (currentEnemies.Length < maxEnemies)
+            {
+                SpawnEnemy();
+            }
+            
             nextSpawnTime = Time.time + spawnCooldown;
         }
     }

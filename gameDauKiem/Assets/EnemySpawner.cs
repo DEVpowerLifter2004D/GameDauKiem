@@ -5,7 +5,7 @@ public class EnemySpawner : MonoBehaviour
     [Header("Spawn Settings")]
     public GameObject enemyPrefab;
     public float spawnInterval = 1.5f;
-    public int maxEnemies = 10;
+    public int maxEnemies = 3;
 
     [Header("Spawn Points - kéo các vị trí spawn vào đây")]
     public Transform[] spawnPoints;

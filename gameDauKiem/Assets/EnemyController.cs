@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Ground Check")]
     public float groundCheckRadius = 0.5f;
+    public bool spriteDefaultFacingLeft = true; // ✅ THÊM: Tích vào đây nếu quái mặc định nhìn trái
 
     private Transform groundCheck;
     private LayerMask groundLayer;
@@ -93,6 +94,28 @@ public class EnemyController : MonoBehaviour
         CheckAttack();
     }
 
+    // ✅ DÙNG LATEUPDATE để ghi đè lên Animation (Animation thường đè Scale trong Update)
+    void LateUpdate()
+    {
+        if (player == null) return;
+
+        // Cập nhật hướng dựa trên vị trí Player
+        int targetDir = (player.position.x > transform.position.x) ? 1 : -1;
+        
+        // Chỉ cập nhật direction nếu đủ gần (đang đuổi hoặc đang đánh)
+        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        if (distToPlayer <= chaseRange)
+        {
+            direction = targetDir;
+        }
+
+        // Thực hiện quay đầu
+        Vector3 scale = transform.localScale;
+        float flipMultiplier = spriteDefaultFacingLeft ? -1f : 1f; 
+        scale.x = originalScaleX * direction * flipMultiplier;
+        transform.localScale = scale;
+    }
+
     void CancelAttack()
     {
         isAttacking = false;
@@ -133,12 +156,7 @@ public class EnemyController : MonoBehaviour
             if (anim != null) anim.SetBool("isWalking", true);
 
             int chaseDir = (player.position.x > transform.position.x) ? 1 : -1;
-
-            if (chaseDir != direction)
-            {
-                direction = chaseDir;
-                Flip();
-            }
+            direction = chaseDir;
 
             rb.linearVelocity = new Vector2(direction * moveSpeed * 1.5f, rb.linearVelocity.y);
         }
@@ -169,12 +187,8 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    void Flip()
-    {
-        Vector3 scale = transform.localScale;
-        scale.x = originalScaleX * direction;
-        transform.localScale = scale;
-    }
+    // Hàm Flip cũ có thể xóa hoặc để trống vì LateUpdate đã lo việc này
+    void Flip() { }
 
     void CheckAttack()
     {
