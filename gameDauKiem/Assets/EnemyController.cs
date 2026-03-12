@@ -18,7 +18,8 @@ public class EnemyController : MonoBehaviour
     public float attackDuration = 0.8f;
     public float attackDamageDelay = 0.3f;  // ✅ THÊM: Delay trước khi deal damage
 
-    [Header("Ground Check")]
+    [Header("Hit Animation")]
+    public float hitAnimationDuration = 0.3f;
     public float groundCheckRadius = 0.5f;
     public bool spriteDefaultFacingLeft = true; // ✅ THÊM: Tích vào đây nếu quái mặc định nhìn trái
 
@@ -29,10 +30,34 @@ public class EnemyController : MonoBehaviour
     private Vector3 startPos;
     private int direction = 1;
     private float originalScaleX;
-    private Animator anim;
+    protected Animator anim;
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isAttacking = false;
+    private bool isHit = false;
+
+    protected virtual void OnMoveStateChanged(bool isMoving)
+    {
+        if (anim != null) anim.SetBool("isWalking", isMoving);
+    }
+
+    protected virtual void OnAttackStarted()
+    {
+        if (anim == null) return;
+        anim.SetBool("isWalking", false);
+        anim.ResetTrigger("Attack");
+        anim.SetTrigger("Attack");
+    }
+
+    protected virtual void OnAttackCancelled()
+    {
+        if (anim != null) anim.ResetTrigger("Attack");
+    }
+
+    protected virtual void OnAttackEnded()
+    {
+        // Default: trigger-based attack has nothing to reset at end.
+    }
 
     void Start()
     {
@@ -82,7 +107,7 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        if (isGrounded && !isAttacking)
+        if (isGrounded && !isAttacking && !isHit)
         {
             Patrol();
         }
@@ -119,13 +144,11 @@ public class EnemyController : MonoBehaviour
     void CancelAttack()
     {
         isAttacking = false;
+        OnAttackEnded();
         CancelInvoke("DealDamageToPlayer");
         CancelInvoke("EndAttack");
 
-        if (anim != null)
-        {
-            anim.ResetTrigger("Attack");
-        }
+        OnAttackCancelled();
 
         Debug.Log("⚠️ Attack cancelled!");
     }
@@ -141,7 +164,7 @@ public class EnemyController : MonoBehaviour
         if (distToPlayer <= attackRange)
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            if (anim != null) anim.SetBool("isWalking", false);
+            OnMoveStateChanged(false);
 
             int faceDir = (player.position.x > transform.position.x) ? 1 : -1;
             if (faceDir != direction)
@@ -153,7 +176,7 @@ public class EnemyController : MonoBehaviour
         // CASE 2: CHASE - Đuổi theo Player
         else if (distToPlayer <= chaseRange)
         {
-            if (anim != null) anim.SetBool("isWalking", true);
+            OnMoveStateChanged(true);
 
             int chaseDir = (player.position.x > transform.position.x) ? 1 : -1;
             direction = chaseDir;
@@ -163,7 +186,7 @@ public class EnemyController : MonoBehaviour
         // CASE 3: PATROL - Tuần tra
         else
         {
-            if (anim != null) anim.SetBool("isWalking", true);
+            OnMoveStateChanged(true);
 
             if (distToStart > patrolDistance)
             {
@@ -196,18 +219,13 @@ public class EnemyController : MonoBehaviour
 
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // CHỈ ATTACK khi trong chaseRange
-        if (distToPlayer <= attackRange && distToPlayer <= chaseRange && Time.time >= lastAttackTime + attackCooldown)
+        // CHỈ ATTACK khi trong chaseRange và không đang bị đánh
+        if (distToPlayer <= attackRange && distToPlayer <= chaseRange && Time.time >= lastAttackTime + attackCooldown && !isHit)
         {
             isAttacking = true;
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
 
-            if (anim != null)
-            {
-                anim.SetBool("isWalking", false);
-                anim.ResetTrigger("Attack");
-                anim.SetTrigger("Attack");
-            }
+            OnAttackStarted();
 
             // ✅ Schedule damage với delay có thể customize
             Invoke("DealDamageToPlayer", attackDamageDelay);
@@ -261,10 +279,17 @@ public class EnemyController : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"💔 Enemy HP: {currentHealth}/{maxHealth}");
 
+        OnTakeDamage();
+
         if (currentHealth <= 0)
         {
             Die();
         }
+    }
+
+    protected virtual void OnTakeDamage()
+    {
+        // Override in child classes for hit animation
     }
 
     // ✅ Getter cho UI
