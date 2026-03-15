@@ -54,7 +54,6 @@ public class EnemyHeartsUI : MonoBehaviour
         if (enemyController == null || heartsImage == null) return;
 
         int hp = enemyController.GetCurrentHealth();
-        Debug.Log($"💔 Enemy HP: {hp}"); // ← THÊM DÒNG NÀY
 
         // Đổi sprite theo HP
         switch (hp)

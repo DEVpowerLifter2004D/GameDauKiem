@@ -139,6 +139,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        Debug.Log("🔥 RESTART BUTTON CLICKED! Scene: " + SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
