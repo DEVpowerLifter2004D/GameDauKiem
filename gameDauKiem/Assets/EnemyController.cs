@@ -93,9 +93,19 @@ public class EnemyController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (player == null) return;
+        if (player == null)
+        {
+            Debug.LogWarning("[ENEMY] Player is NULL!");
+            return;
+        }
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        // Kiểm tra Rigidbody constraints
+        if (rb.constraints != RigidbodyConstraints2D.None && rb.constraints != RigidbodyConstraints2D.FreezeRotation)
+        {
+            Debug.LogWarning($"[ENEMY] Rigidbody constraints: {rb.constraints} - This may prevent movement!");
+        }
 
         // Cancel attack nếu Player xa quá
         if (isAttacking)
@@ -107,11 +117,12 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        if (isGrounded && !isAttacking && !isHit)
+        // Di chuyển khi không đang attack và không bị đánh (cho phép di chuyển trên không)
+        if (!isAttacking && !isHit)
         {
             Patrol();
         }
-        else if (isGrounded && isAttacking)
+        else if (isAttacking)
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
@@ -200,13 +211,6 @@ public class EnemyController : MonoBehaviour
             }
 
             rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
-
-            if (Mathf.Abs(rb.linearVelocity.x) < 0.1f && moveSpeed > 0)
-            {
-                Debug.LogWarning("🚫 STUCK! Reversing...");
-                direction *= -1;
-                Flip();
-            }
         }
     }
 
@@ -271,7 +275,8 @@ public class EnemyController : MonoBehaviour
     void EndAttack()
     {
         isAttacking = false;
-        Debug.Log("✅ Attack animation finished");
+        OnAttackEnded();
+        Debug.Log("✅ Attack ended");
     }
 
     public void TakeDamage(int damage)
@@ -279,12 +284,21 @@ public class EnemyController : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"💔 Enemy HP: {currentHealth}/{maxHealth}");
 
+        isHit = true;
+        CancelInvoke(nameof(ResetHit));
+        Invoke(nameof(ResetHit), hitAnimationDuration);
+
         OnTakeDamage();
 
         if (currentHealth <= 0)
         {
             Die();
         }
+    }
+
+    void ResetHit()
+    {
+        isHit = false;
     }
 
     protected virtual void OnTakeDamage()

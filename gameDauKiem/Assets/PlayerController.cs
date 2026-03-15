@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     public int maxHealth = 5;
     private int currentHealth;
 
+    [Header("Fall Death")]
+    public float fallDeathY = -10f;  // Rơi xuống dưới -10 thì chết
+
     [Header("Attack")]
     public Transform attackPoint;
     public float attackRadius = 0.5f;
@@ -52,6 +55,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Kiểm tra rơi ra khỏi map → Chết (trừ hết máu)
+        if (transform.position.y < fallDeathY)
+        {
+            Debug.Log("💀 Player fell off map! INSTANT DEATH!");
+            currentHealth = 0;
+            FindFirstObjectByType<GameManager>()?.PlayerDied();
+            return;
+        }
+
         moveInput = 0f;
         if (Keyboard.current.aKey.isPressed) moveInput = -1f;
         if (Keyboard.current.dKey.isPressed) moveInput = 1f;
