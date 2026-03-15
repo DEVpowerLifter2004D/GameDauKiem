@@ -42,5 +42,8 @@ Desktop.ini
 # Crash reports
 sysinfo.txt
 
-gameDauKiem/Logs/
-gameDauKiem/UserSettings/
+UserSettings/
+Library/
+Temp/
+Logs/
+Obj/
