@@ -1,3 +1,4 @@
 Base path: 'D:/wq/6000.3.2f1/Editor/Data', plugins path 'D:/wq/6000.3.2f1/Editor/Data/PlaybackEngines', jobs: y
 Cmd: initializeCompiler
 
+Cmd: shutdown
