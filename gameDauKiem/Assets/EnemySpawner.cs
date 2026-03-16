@@ -7,16 +7,16 @@ public class EnemySpawner : MonoBehaviour
     public float spawnInterval = 1.5f;
     public int maxEnemies = 3;
 
-    [Header("Spawn Points - kéo các vị trí spawn vào đây")]
+    [Header("Spawn Points")]
     public Transform[] spawnPoints;
 
     private float timer = 0f;
+    private int currentAliveCount = 0;
 
     void Update()
     {
-        // Không spawn nếu đã đủ enemy
-        EnemyController[] current = FindObjectsOfType<EnemyController>();
-        if (current.Length >= maxEnemies) return;
+
+        if (currentAliveCount >= maxEnemies) return;
 
         timer += Time.deltaTime;
         if (timer >= spawnInterval)
@@ -30,9 +30,23 @@ public class EnemySpawner : MonoBehaviour
     {
         if (spawnPoints.Length == 0 || enemyPrefab == null) return;
 
-        // Chọn ngẫu nhiên 1 điểm spawn
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        Instantiate(enemyPrefab, point.position, Quaternion.identity);
-        Debug.Log("👾 Spawned enemy!");
+        GameObject newEnemy = Instantiate(enemyPrefab, point.position, Quaternion.identity);
+
+        // ✅ Enemy sẽ tự gọi OnEnemySpawned() trong Start()
+        // Nên KHÔNG cần currentAliveCount++ ở đây nữa
+
+    }
+
+    // ✅ HÀM MỚI: Được gọi từ Enemy.Start()
+    public void OnEnemySpawned()
+    {
+        currentAliveCount++;
+    }
+
+    // ✅ Được gọi từ Enemy.Die()
+    public void OnEnemyDied()
+    {
+        currentAliveCount--;
     }
 }

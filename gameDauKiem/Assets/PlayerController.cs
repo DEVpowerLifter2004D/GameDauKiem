@@ -137,6 +137,9 @@ public class PlayerController : MonoBehaviour
     public void DealDamage()
     {
         Debug.Log("🗡️ Player DealDamage() called!");
+        Debug.Log($"🔍 AttackPoint position: {attackPoint.position}");
+        Debug.Log($"🔍 Attack radius: {attackRadius}");
+        Debug.Log($"🔍 Enemy Layer mask: {enemyLayer.value}");
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, enemyLayer);
 
@@ -144,6 +147,17 @@ public class PlayerController : MonoBehaviour
 
         foreach (Collider2D hit in hits)
         {
+            Debug.Log($"🎯 Hit object: {hit.gameObject.name}, Layer: {LayerMask.LayerToName(hit.gameObject.layer)}");
+
+            // ✅ TRY: Detect BossController thay vì EnemyController
+            BossController boss = hit.GetComponent<BossController>();
+            if (boss != null)
+            {
+                boss.TakeDamage(attackDamage);
+                Debug.Log($"💥 Player HIT BOSS! Dealt {attackDamage} damage!");
+                continue;
+            }
+
             EnemyController enemy = hit.GetComponent<EnemyController>();
             if (enemy != null)
             {

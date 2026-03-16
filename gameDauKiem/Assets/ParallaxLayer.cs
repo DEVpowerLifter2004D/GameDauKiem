@@ -1,27 +1,44 @@
 ﻿using UnityEngine;
+
 public class ParallaxLayer : MonoBehaviour
 {
     public Transform cameraTransform;
-    public Transform playerTransform; // ← THÊM: kéo Player vào đây
+    public Transform playerTransform;
+
     [Range(0f, 1f)]
     public float parallaxEffect = 0.5f;
-    private float spriteWidth;
-    private Vector3 startPos;
-    private float startPlayerX;
+
+    private Vector3 previousCameraPos;
 
     void Start()
     {
-        startPos = transform.position;
-        startPlayerX = playerTransform.position.x;
-        spriteWidth = GetComponent<SpriteRenderer>().bounds.size.x;
+        // Tự động tìm Camera nếu chưa gán
+        if (cameraTransform == null)
+            cameraTransform = Camera.main.transform;
+
+        // Tự động tìm Player nếu chưa gán
+        if (playerTransform == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                playerTransform = player.transform;
+        }
+
+        if (cameraTransform != null)
+            previousCameraPos = cameraTransform.position;
     }
 
     void LateUpdate()
     {
-        // Tính theo PLAYER thay vì camera → không bị lag
-        float playerTravelled = playerTransform.position.x - startPlayerX;
-        float newX = startPos.x + playerTravelled * parallaxEffect;
-        transform.position = new Vector3(newX, transform.position.y, transform.position.z);
-        // Bỏ phần Endless loop đi vì map không cuộn nữa
+        if (cameraTransform == null) return;
+
+        // Tính khoảng cách camera di chuyển
+        float deltaX = cameraTransform.position.x - previousCameraPos.x;
+
+        // Di chuyển background theo parallax
+        transform.position += new Vector3(deltaX * parallaxEffect, 0, 0);
+
+        // Cập nhật vị trí camera
+        previousCameraPos = cameraTransform.position;
     }
 }

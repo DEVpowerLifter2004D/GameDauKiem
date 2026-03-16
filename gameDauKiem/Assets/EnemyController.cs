@@ -67,7 +67,13 @@ public class EnemyController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        Debug.Log($"🎯 ENEMY FOUND AT: {transform.position}, Parent: {transform.parent?.name ?? "NULL"}, GameObject: {gameObject.name}");
+        // ✅ THAY ĐỔI: Gọi GameManager thay vì EnemySpawner
+        GameManager gm = FindFirstObjectByType<GameManager>();
+        if (gm != null)
+        {
+            gm.OnEnemySpawned();
+        }
+
 
         groundCheck = transform.Find("GroundCheck");
         if (groundCheck == null)
@@ -76,7 +82,6 @@ public class EnemyController : MonoBehaviour
             checkObj.transform.parent = transform;
             checkObj.transform.localPosition = new Vector3(0, -0.6f, 0);
             groundCheck = checkObj.transform;
-            Debug.Log("✅ Created GroundCheck");
         }
 
         groundLayer = LayerMask.GetMask("Ground");
@@ -85,12 +90,22 @@ public class EnemyController : MonoBehaviour
         if (playerObj != null)
         {
             player = playerObj.transform;
-            Debug.Log("✅ Enemy found Player!");
         }
 
-        Debug.Log($"🔥 ENEMY START - AttackRange: {attackRange}, ChaseRange: {chaseRange}");
     }
 
+    void Die()
+    {
+
+        // ✅ THAY ĐỔI: Thông báo GameManager
+        GameManager gm = FindFirstObjectByType<GameManager>();
+        if (gm != null)
+        {
+            gm.OnEnemyDied();
+        }
+
+        Destroy(gameObject);
+    }
     void FixedUpdate()
     {
         if (player == null)
@@ -137,7 +152,7 @@ public class EnemyController : MonoBehaviour
 
         // Cập nhật hướng dựa trên vị trí Player
         int targetDir = (player.position.x > transform.position.x) ? 1 : -1;
-        
+
         // Chỉ cập nhật direction nếu đủ gần (đang đuổi hoặc đang đánh)
         float distToPlayer = Vector2.Distance(transform.position, player.position);
         if (distToPlayer <= chaseRange)
@@ -147,7 +162,7 @@ public class EnemyController : MonoBehaviour
 
         // Thực hiện quay đầu
         Vector3 scale = transform.localScale;
-        float flipMultiplier = spriteDefaultFacingLeft ? -1f : 1f; 
+        float flipMultiplier = spriteDefaultFacingLeft ? -1f : 1f;
         scale.x = originalScaleX * direction * flipMultiplier;
         transform.localScale = scale;
     }
@@ -161,7 +176,6 @@ public class EnemyController : MonoBehaviour
 
         OnAttackCancelled();
 
-        Debug.Log("⚠️ Attack cancelled!");
     }
 
     void Patrol()
@@ -236,22 +250,18 @@ public class EnemyController : MonoBehaviour
             Invoke("EndAttack", attackDuration);
 
             lastAttackTime = Time.time;
-            Debug.Log("🗡️ ENEMY ATTACK TRIGGERED!");
         }
     }
 
-    // ✅ IMPROVED: Thêm nhiều debug log hơn
     void DealDamageToPlayer()
     {
         if (player == null)
         {
-            Debug.LogError("❌ Player is NULL!");
             return;
         }
 
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        Debug.Log($"🗡️ Enemy trying to deal damage! Distance: {distToPlayer:F2}, AttackRange: {attackRange}");
 
         if (distToPlayer <= attackRange)
         {
@@ -259,16 +269,11 @@ public class EnemyController : MonoBehaviour
             if (playerCtrl != null)
             {
                 playerCtrl.TakeDamage(attackDamage);
-                Debug.Log($"💥 Enemy HIT Player! Dealt {attackDamage} damage!");
             }
-            else
-            {
-                Debug.LogError("❌ Player doesn't have PlayerController component!");
-            }
+
         }
         else
         {
-            Debug.LogWarning($"⚠️ Player too far to hit! Distance: {distToPlayer:F2} > AttackRange: {attackRange}");
         }
     }
 
@@ -310,12 +315,6 @@ public class EnemyController : MonoBehaviour
     public int GetCurrentHealth()
     {
         return currentHealth;
-    }
-
-    void Die()
-    {
-        Debug.Log("💀 Enemy died!");
-        Destroy(gameObject);
     }
 
     void OnDrawGizmosSelected()

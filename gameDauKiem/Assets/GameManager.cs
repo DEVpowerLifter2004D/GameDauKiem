@@ -1,64 +1,185 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     [Header("Enemy Spawning")]
-    public GameObject enemyPrefab;
     public Transform[] spawnPoints;
-    public float spawnCooldown = 2f;  // Cooldown giữa mỗi lần spawn
-    public int maxEnemies = 5;        // ✅ THÊM: Giới hạn số lượng quái
+    public float spawnCooldown = 2f;
+    public int maxEnemiesOnScreen = 15;
+
+    [Header("Boss Wave Settings")]
+    [Range(0f, 1f)]
+    public float bossWaveStartPercent = 0.5f;
+    public Transform bossSpawnPoint;
+    public float bossWarningTime = 3f;
 
     [Header("Game Rules")]
-    public float survivalTime = 30f;  // Thời gian cần sống sót (30s hoặc 300s cho 5 phút)
+    public float survivalTime = 60f;
 
     [Header("UI")]
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI waveText;
     public GameObject winPanel;
     public GameObject losePanel;
+
+    [Header("Boss Warning UI")]
+    public GameObject bossWarningPanel;
+    public TextMeshProUGUI bossWarningText;
+    public TextMeshProUGUI bossCountdownText;
 
     private float currentTime;
     private float nextSpawnTime;
     private bool gameOver = false;
+    private int currentAliveCount = 0;
+
+    private bool isBossWave = false;
+    private bool bossSpawned = false;
+    private bool bossWarningShown = false;
+    private float bossWaveStartTime;
+
+    private GameObject bossInstance;
+
+    private GameObject enemyPrefab;
+    private GameObject bossPrefab;
+
+    void Awake()
+    {
+        enemyPrefab = Resources.Load<GameObject>("Enemy");
+        bossPrefab = Resources.Load<GameObject>("Boss");
+
+        if (enemyPrefab == null)
+            Debug.LogError("❌ Enemy prefab not found in Resources!");
+
+        if (bossPrefab == null)
+            Debug.LogError("❌ Boss prefab not found in Resources!");
+    }
 
     void Start()
     {
         currentTime = 0f;
         nextSpawnTime = Time.time + spawnCooldown;
+        bossWaveStartTime = survivalTime * bossWaveStartPercent;
 
         if (winPanel) winPanel.SetActive(false);
         if (losePanel) losePanel.SetActive(false);
+        if (bossWarningPanel) bossWarningPanel.SetActive(false);
+
+        UpdateWaveText("ENEMY WAVE");
+
+        Debug.Log($"🎮 Game Start | Boss Warning at {bossWaveStartTime - bossWarningTime}s | Boss at {bossWaveStartTime}s");
     }
 
     void Update()
     {
         if (gameOver) return;
 
-        // ✅ ĐẾM THỜI GIAN
         currentTime += Time.deltaTime;
         UpdateTimerUI();
 
-        // ✅ CHECK WIN: Hết thời gian → Thắng!
-        if (currentTime >= survivalTime)
+        float warningTime = bossWaveStartTime - bossWarningTime;
+
+        if (!bossWarningShown && currentTime >= warningTime)
         {
-            Win();
-            return;  // Dừng spawn
+            bossWarningShown = true;
+            StartCoroutine(ShowBossWarning());
         }
 
-        // ✅ SPAWN CÓ GIỚI HẠN: Chỉ spawn khi chưa hết giờ và chưa đủ quái
-        if (Time.time >= nextSpawnTime)
+        if (!isBossWave && currentTime >= bossWaveStartTime)
         {
-            // Kiểm tra số lượng quái hiện có trong Scene
-            EnemyController[] currentEnemies = FindObjectsOfType<EnemyController>();
-            
-            if (currentEnemies.Length < maxEnemies)
+            StartBossWave();
+        }
+
+        if (!isBossWave)
+        {
+            if (Time.time >= nextSpawnTime && currentAliveCount < maxEnemiesOnScreen)
             {
                 SpawnEnemy();
+                nextSpawnTime = Time.time + spawnCooldown;
             }
-            
-            nextSpawnTime = Time.time + spawnCooldown;
         }
+        else
+        {
+            if (bossSpawned && bossInstance == null)
+            {
+                Win();
+            }
+        }
+
+        if (currentTime >= survivalTime && isBossWave && bossInstance != null)
+        {
+            PlayerDied();
+        }
+    }
+
+    IEnumerator ShowBossWarning()
+    {
+        if (bossWarningPanel) bossWarningPanel.SetActive(true);
+
+        if (bossWarningText)
+        {
+            bossWarningText.gameObject.SetActive(true);
+            bossWarningText.text = "⚠ WARNING! BOSS INCOMING ⚠";
+        }
+
+        if (bossCountdownText)
+        {
+            for (int i = 3; i > 0; i--)
+            {
+                bossCountdownText.text = i.ToString();
+                yield return new WaitForSeconds(1f);
+            }
+
+            bossCountdownText.text = "";
+        }
+
+        if (bossWarningPanel) bossWarningPanel.SetActive(false);
+    }
+
+    void StartBossWave()
+    {
+        isBossWave = true;
+
+        Debug.Log("👑 Boss Wave Started!");
+        UpdateWaveText("⚔ BOSS FIGHT ⚔");
+
+        EnemyController[] enemies = FindObjectsOfType<EnemyController>();
+
+        foreach (var enemy in enemies)
+        {
+            Destroy(enemy.gameObject);
+        }
+
+        currentAliveCount = 0;
+
+        SpawnBoss();
+        bossSpawned = true;
+    }
+
+    void SpawnEnemy()
+    {
+        if (enemyPrefab == null || spawnPoints.Length == 0) return;
+
+        Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+        Instantiate(enemyPrefab, point.position, Quaternion.identity);
+
+        OnEnemySpawned();
+    }
+
+    void SpawnBoss()
+    {
+        if (bossPrefab == null) return;
+
+        Vector3 spawnPos = bossSpawnPoint != null
+            ? bossSpawnPoint.position
+            : new Vector3(0, -2, 0);
+
+        bossInstance = Instantiate(bossPrefab, spawnPos, Quaternion.identity);
+
+        Debug.Log("👑 Boss Spawned!");
     }
 
     void UpdateTimerUI()
@@ -67,81 +188,74 @@ public class GameManager : MonoBehaviour
 
         float timeLeft = survivalTime - currentTime;
 
-        // Đếm ngược
         int minutes = Mathf.FloorToInt(timeLeft / 60f);
         int seconds = Mathf.FloorToInt(timeLeft % 60);
 
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerText.text = $"{minutes:00}:{seconds:00}";
     }
 
-    void SpawnEnemy()
+    void UpdateWaveText(string text)
     {
-        if (spawnPoints.Length == 0)
-        {
-            Debug.LogError("❌ No spawn points!");
-            return;
-        }
+        if (waveText)
+            waveText.text = text;
+    }
 
-        // Chọn spawn point ngẫu nhiên
-        Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+    public void OnEnemySpawned()
+    {
+        currentAliveCount++;
+    }
 
-        // Spawn enemy VÔ HẠN
-        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
-        Debug.Log($"👹 Enemy spawned at {spawnPoint.position}");
+    public void OnEnemyDied()
+    {
+        currentAliveCount--;
+
+        if (currentAliveCount < 0)
+            currentAliveCount = 0;
     }
 
     public void PlayerDied()
     {
         if (gameOver) return;
 
-        Debug.Log("💀 PLAYER DIED - GAME OVER!");
         gameOver = true;
 
+        Debug.Log("💀 Player Died");
+
         if (losePanel) losePanel.SetActive(true);
-        Time.timeScale = 0f;  // Dừng game
+
+        Time.timeScale = 0f;
     }
 
     void Win()
     {
         if (gameOver) return;
 
-        Debug.Log("🎉 YOU WIN!");
         gameOver = true;
 
+        Debug.Log("🎉 Boss Defeated - You Win!");
+
         if (winPanel) winPanel.SetActive(true);
-        Time.timeScale = 0f;  // Dừng game
-    }
 
-    // ✅ HÀM MỚI: Load next level
-    public void LoadNextLevel()
-    {
-
-        Debug.Log("🔥 NEXT LEVEL BUTTON CLICKED!"); // ← THÊM DÒNG NÀY
-
-
-        Time.timeScale = 1f;  // Reset time scale
-
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
-
-        // Check nếu có scene tiếp theo
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            // Nếu hết level, quay về level đầu
-            Debug.Log("✅ All levels completed! Restarting...");
-            SceneManager.LoadScene(0);
-        }
+        Time.timeScale = 0f;
     }
 
     public void RestartGame()
     {
-        Debug.Log("🔥 RESTART BUTTON CLICKED! Scene: " + SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void LoadNextLevel()
+    {
+        Time.timeScale = 1f;
+
+        int next = SceneManager.GetActiveScene().buildIndex + 1;
+
+        if (next < SceneManager.sceneCountInBuildSettings)
+            SceneManager.LoadScene(next);
+        else
+            SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
