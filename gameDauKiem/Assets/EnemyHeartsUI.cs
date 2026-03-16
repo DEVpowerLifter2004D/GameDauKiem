@@ -1,9 +1,8 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UI;
 using Unity.VisualScripting;
-using static UnityEditor.PlayerSettings;
+
 
 public class EnemyHeartsUI : MonoBehaviour
 {
