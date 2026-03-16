@@ -32,7 +32,6 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isAttacking = false;
-
     void Start()
     {
         currentHealth = maxHealth;
@@ -41,7 +40,13 @@ public class EnemyController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        Debug.Log($"🎯 ENEMY FOUND AT: {transform.position}, Parent: {transform.parent?.name ?? "NULL"}, GameObject: {gameObject.name}");
+        // ✅ THAY ĐỔI: Gọi GameManager thay vì EnemySpawner
+        GameManager gm = FindFirstObjectByType<GameManager>();
+        if (gm != null)
+        {
+            gm.OnEnemySpawned();
+        }
+
 
         groundCheck = transform.Find("GroundCheck");
         if (groundCheck == null)
@@ -50,7 +55,6 @@ public class EnemyController : MonoBehaviour
             checkObj.transform.parent = transform;
             checkObj.transform.localPosition = new Vector3(0, -0.6f, 0);
             groundCheck = checkObj.transform;
-            Debug.Log("✅ Created GroundCheck");
         }
 
         groundLayer = LayerMask.GetMask("Ground");
@@ -59,12 +63,22 @@ public class EnemyController : MonoBehaviour
         if (playerObj != null)
         {
             player = playerObj.transform;
-            Debug.Log("✅ Enemy found Player!");
         }
 
-        Debug.Log($"🔥 ENEMY START - AttackRange: {attackRange}, ChaseRange: {chaseRange}");
     }
 
+    void Die()
+    {
+
+        // ✅ THAY ĐỔI: Thông báo GameManager
+        GameManager gm = FindFirstObjectByType<GameManager>();
+        if (gm != null)
+        {
+            gm.OnEnemyDied();
+        }
+
+        Destroy(gameObject);
+    }
     void FixedUpdate()
     {
         if (player == null) return;
@@ -104,7 +118,6 @@ public class EnemyController : MonoBehaviour
             anim.ResetTrigger("Attack");
         }
 
-        Debug.Log("⚠️ Attack cancelled!");
     }
 
     void Patrol()
@@ -162,7 +175,6 @@ public class EnemyController : MonoBehaviour
 
             if (Mathf.Abs(rb.linearVelocity.x) < 0.1f && moveSpeed > 0)
             {
-                Debug.LogWarning("🚫 STUCK! Reversing...");
                 direction *= -1;
                 Flip();
             }
@@ -200,22 +212,18 @@ public class EnemyController : MonoBehaviour
             Invoke("EndAttack", attackDuration);
 
             lastAttackTime = Time.time;
-            Debug.Log("🗡️ ENEMY ATTACK TRIGGERED!");
         }
     }
 
-    // ✅ IMPROVED: Thêm nhiều debug log hơn
     void DealDamageToPlayer()
     {
         if (player == null)
         {
-            Debug.LogError("❌ Player is NULL!");
             return;
         }
 
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        Debug.Log($"🗡️ Enemy trying to deal damage! Distance: {distToPlayer:F2}, AttackRange: {attackRange}");
 
         if (distToPlayer <= attackRange)
         {
@@ -223,29 +231,22 @@ public class EnemyController : MonoBehaviour
             if (playerCtrl != null)
             {
                 playerCtrl.TakeDamage(attackDamage);
-                Debug.Log($"💥 Enemy HIT Player! Dealt {attackDamage} damage!");
             }
-            else
-            {
-                Debug.LogError("❌ Player doesn't have PlayerController component!");
-            }
+           
         }
         else
         {
-            Debug.LogWarning($"⚠️ Player too far to hit! Distance: {distToPlayer:F2} > AttackRange: {attackRange}");
         }
     }
 
     void EndAttack()
     {
         isAttacking = false;
-        Debug.Log("✅ Attack animation finished");
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log($"💔 Enemy HP: {currentHealth}/{maxHealth}");
 
         if (currentHealth <= 0)
         {
@@ -257,12 +258,6 @@ public class EnemyController : MonoBehaviour
     public int GetCurrentHealth()
     {
         return currentHealth;
-    }
-
-    void Die()
-    {
-        Debug.Log("💀 Enemy died!");
-        Destroy(gameObject);
     }
 
     void OnDrawGizmosSelected()
