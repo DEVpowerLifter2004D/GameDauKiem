@@ -156,8 +156,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -372467167
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7462242244685289806, guid: 0a4eb8027c9300049b95e6a5a4ba048c, type: 3}
@@ -191,7 +191,9 @@ MonoBehaviour:
   attackCooldown: 1.5
   attackDuration: 0.8
   attackDamageDelay: 0.3
+  hitAnimationDuration: 0.3
   groundCheckRadius: 0.2
+  spriteDefaultFacingLeft: 1
 --- !u!95 &6063378302224821011
 Animator:
   serializedVersion: 7

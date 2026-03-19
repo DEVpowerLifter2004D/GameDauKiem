@@ -144,11 +144,20 @@ public class PlayerController : MonoBehaviour
 
         foreach (Collider2D hit in hits)
         {
-            EnemyController enemy = hit.GetComponent<EnemyController>();
-            if (enemy != null)
+            // 1. Kiểm tra xem có phải quái cũ dùng EnemyController không (như Goblin)
+            EnemyController oldEnemy = hit.GetComponent<EnemyController>();
+            if (oldEnemy != null)
             {
-                enemy.TakeDamage(attackDamage);
-                Debug.Log($"💥 Player HIT {enemy.gameObject.name}! Dealt {attackDamage} damage!");
+                oldEnemy.TakeDamage(attackDamage);
+                Debug.Log($"💥 Player HIT {hit.gameObject.name}! Dealt {attackDamage} damage!");
+            }
+
+            // 2. Kiểm tra xem có phải quái mới dùng EnemyHealth không (như con Ong)
+            EnemyHealth newEnemy = hit.GetComponent<EnemyHealth>();
+            if (newEnemy != null)
+            {
+                newEnemy.TakeDamage(attackDamage);
+                Debug.Log($"💥 Player HIT {hit.gameObject.name}! Dealt {attackDamage} damage!");
             }
         }
     }
