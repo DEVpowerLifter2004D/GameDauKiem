@@ -20,13 +20,13 @@ public class PlayerController : MonoBehaviour
     private int currentHealth;
 
     [Header("Fall Death")]
-    public float fallDeathY = -10f;  // Rơi xuống dưới -10 thì chết
+    public float fallDeathY = -10f;
 
     [Header("Attack")]
     public Transform attackPoint;
     public float attackRadius = 0.5f;
     public int attackDamage = 1;
-    public float attackDelay = 0.3f;  // Thời gian đến khi damage được deal
+    public float attackDelay = 0.3f;
 
     private LayerMask groundLayer;
     private LayerMask enemyLayer;
@@ -47,39 +47,42 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-
         groundLayer = LayerMask.GetMask("Ground");
         enemyLayer = LayerMask.GetMask("Enemy");
-        Debug.Log($"✅ Player Ground Layer: {groundLayer.value}, Enemy Layer: {enemyLayer.value}");
+
+        Debug.Log($"✅ Ground Layer: {groundLayer.value}, Enemy Layer: {enemyLayer.value}");
     }
 
     void Update()
     {
-        // Kiểm tra rơi ra khỏi map → Chết (trừ hết máu)
+        // 💀 Rơi khỏi map
         if (transform.position.y < fallDeathY)
         {
-            Debug.Log("💀 Player fell off map! INSTANT DEATH!");
+            Debug.Log("💀 Player fell off map!");
             currentHealth = 0;
             FindFirstObjectByType<GameManager>()?.PlayerDied();
             return;
         }
 
+        // 🎮 Input
         moveInput = 0f;
         if (Keyboard.current.aKey.isPressed) moveInput = -1f;
         if (Keyboard.current.dKey.isPressed) moveInput = 1f;
+
         Flip(moveInput);
 
+        // 🟢 Check ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // 🦘 Jump
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetTrigger("Jump");
-            Debug.Log($"🔥 JUMP! Velocity Y: {rb.linearVelocity.y}");
         }
 
-        // ✅ FIX: Gọi AttackSequence thay vì chỉ set animation
+        // ⚔️ Attack
         if (Mouse.current.leftButton.wasPressedThisFrame && !isAttacking)
         {
             isAttacking = true;
@@ -87,27 +90,23 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(AttackSequence());
         }
 
+        // 🎞 Animation
         anim.SetFloat("Speed", Mathf.Abs(moveInput));
         anim.SetFloat("YVelocity", rb.linearVelocity.y);
         anim.SetBool("Grounded", isGrounded);
-
-        //Vector3 pos = transform.position;
-        //pos.x = Mathf.Clamp(pos.x, -8f, 8f); // chỉnh -8 và 8 theo map của bạn
-        //transform.position = pos;
-
     }
 
     void FixedUpdate()
     {
         float targetSpeed = moveInput * moveSpeed;
+
         if (isGrounded)
         {
             rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
         }
         else
         {
-            float currentX = rb.linearVelocity.x;
-            float newX = Mathf.Lerp(currentX, targetSpeed, airControlMultiplier);
+            float newX = Mathf.Lerp(rb.linearVelocity.x, targetSpeed, airControlMultiplier);
             rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
         }
     }
@@ -118,6 +117,7 @@ public class PlayerController : MonoBehaviour
         transform.localScale = new Vector3(moveX > 0 ? 1 : -1, 1, 1);
     }
 
+    // ❤️ DAMAGE
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -127,13 +127,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // ✅ Getter cho UI
     public int GetCurrentHealth()
     {
         return currentHealth;
     }
 
-    // ✅ Hồi máu, clamp không vượt quá maxHealth
     public bool Heal(int amount)
     {
         if (amount <= 0) return false;
@@ -143,61 +141,62 @@ public class PlayerController : MonoBehaviour
         return currentHealth > before;
     }
 
-    // ✅ ĐƯỢC GỌI TỪ AttackSequence hoặc Animation Event
+    // ⚔️ DEAL DAMAGE (FULL SUPPORT)
     public void DealDamage()
     {
-        Debug.Log("🗡️ Player DealDamage() called!");
+        Debug.Log("🗡️ DealDamage()");
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, enemyLayer);
-
-        Debug.Log($"🔍 Found {hits.Length} enemies in attack range");
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            attackPoint.position,
+            attackRadius,
+            enemyLayer
+        );
 
         foreach (Collider2D hit in hits)
         {
-            // ✅ CHECK: BossStaticController (ArchDemon mới)
+            // ✅ Boss static (ArchDemon)
             BossStaticController bossStatic = hit.GetComponent<BossStaticController>();
             if (bossStatic != null)
             {
                 bossStatic.TakeDamage(attackDamage);
-                Debug.Log($"💥 Player HIT BOSS STATIC! Dealt {attackDamage} damage!");
                 continue;
             }
 
-            // ✅ CHECK: BossController (Boss cũ)
+            // ✅ Boss thường
             BossController boss = hit.GetComponent<BossController>();
             if (boss != null)
             {
                 boss.TakeDamage(attackDamage);
-                Debug.Log($"💥 Player HIT BOSS! Dealt {attackDamage} damage!");
                 continue;
             }
 
-            // ✅ CHECK: EnemyController (Enemy thường)
-            EnemyController enemy = hit.GetComponent<EnemyController>();
-            if (enemy != null)
+            // ✅ Enemy cũ
+            EnemyController oldEnemy = hit.GetComponent<EnemyController>();
+            if (oldEnemy != null)
             {
-                enemy.TakeDamage(attackDamage);
-                Debug.Log($"💥 Player HIT {enemy.gameObject.name}! Dealt {attackDamage} damage!");
+                oldEnemy.TakeDamage(attackDamage);
+                continue;
+            }
+
+            // ✅ Enemy mới (EnemyHealth)
+            EnemyHealth newEnemy = hit.GetComponent<EnemyHealth>();
+            if (newEnemy != null)
+            {
+                newEnemy.TakeDamage(attackDamage);
             }
         }
     }
 
-    // ✅ NEW: Sequence attack có delay
+    // ⏱ Attack timing
     private IEnumerator AttackSequence()
     {
-        // Chờ đến khi tay vung đến (giữa animation)
         yield return new WaitForSeconds(attackDelay);
-
-        // Gây damage
         DealDamage();
 
-        // Chờ animation kết thúc
         yield return new WaitForSeconds(0.6f - attackDelay);
-
         isAttacking = false;
     }
 
-    // ✅ Có thể gọi từ Animation Event nếu dùng phương pháp 1
     public void OnAttackFinished()
     {
         isAttacking = false;
@@ -210,6 +209,7 @@ public class PlayerController : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
+
         if (attackPoint != null)
         {
             Gizmos.color = Color.yellow;
