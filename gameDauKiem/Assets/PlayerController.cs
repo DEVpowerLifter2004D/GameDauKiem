@@ -133,6 +133,16 @@ public class PlayerController : MonoBehaviour
         return currentHealth;
     }
 
+    // ✅ Hồi máu, clamp không vượt quá maxHealth
+    public bool Heal(int amount)
+    {
+        if (amount <= 0) return false;
+
+        int before = currentHealth;
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        return currentHealth > before;
+    }
+
     // ✅ ĐƯỢC GỌI TỪ AttackSequence hoặc Animation Event
     public void DealDamage()
     {
