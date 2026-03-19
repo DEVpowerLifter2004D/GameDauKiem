@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,7 +130,8 @@
               "RelativeToolTip": "Assets\\EnemyHeartsUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T14:13:33.598Z"
+              "WhenOpened": "2026-03-17T14:37:48.321Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -167,6 +168,7 @@
               "ViewState": "AgIAACcAAAAAAAAAAAAgwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T16:11:26.351Z"
+              "WhenOpened": "2026-03-10T16:11:26.351Z"
             },
             {
               "$type": "Document",
@@ -190,8 +192,7 @@
               "RelativeToolTip": "Assets\\GameManager.cs",
               "ViewState": "AgIAAAgBAAAAAAAAAAAAAAgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T03:30:01.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T03:30:01.061Z"
             },
             {
               "$type": "Document",
@@ -209,18 +210,102 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ParallaxLayer.cs",
+              "DocumentMoniker": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\ParallaxLayer.cs",
+              "RelativeDocumentMoniker": "Assets\\ParallaxLayer.cs",
+              "ToolTip": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\ParallaxLayer.cs",
+              "RelativeToolTip": "Assets\\ParallaxLayer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T13:52:11.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Playerhealthui.cs",
+              "DocumentMoniker": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\Playerhealthui.cs",
+              "RelativeDocumentMoniker": "Assets\\Playerhealthui.cs",
+              "ToolTip": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\Playerhealthui.cs",
+              "RelativeToolTip": "Assets\\Playerhealthui.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T03:24:24.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "D:\\pru\\GameDauKiem\\gameDauKiem\\Assets\\EnemyController.cs",
               "RelativeDocumentMoniker": "Assets\\EnemyController.cs",
               "ToolTip": "D:\\pru\\GameDauKiem\\gameDauKiem\\Assets\\EnemyController.cs",
               "RelativeToolTip": "Assets\\EnemyController.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAYwBQBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwBAAAAAAAAAAArwBsBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T14:06:22.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "GoblinController.cs",
+              "DocumentMoniker": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\GoblinController.cs",
+              "RelativeDocumentMoniker": "Assets\\GoblinController.cs",
+              "ToolTip": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\GoblinController.cs",
+              "RelativeToolTip": "Assets\\GoblinController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T04:15:03.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyHeartsUI.cs",
+              "DocumentMoniker": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\EnemyHeartsUI.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemyHeartsUI.cs",
+              "ToolTip": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\EnemyHeartsUI.cs",
+              "RelativeToolTip": "Assets\\EnemyHeartsUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T14:13:33.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BossController.cs",
+              "DocumentMoniker": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\BossController.cs",
+              "RelativeDocumentMoniker": "Assets\\BossController.cs",
+              "ToolTip": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\BossController.cs",
+              "RelativeToolTip": "Assets\\BossController.cs",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAgwCcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T16:10:17.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BossHealthBarUI.cs",
+              "DocumentMoniker": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\BossHealthBarUI.cs",
+              "RelativeDocumentMoniker": "Assets\\BossHealthBarUI.cs",
+              "ToolTip": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\BossHealthBarUI.cs",
+              "RelativeToolTip": "Assets\\BossHealthBarUI.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:58:53.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemySpawner.cs",
+              "ToolTip": "D:\\gamedaukeim4\\GameDauKiem\\gameDauKiem\\Assets\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\EnemySpawner.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T13:52:02.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "D:\\pru\\GameDauKiem\\gameDauKiem\\Assets\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\CameraFollow.cs",

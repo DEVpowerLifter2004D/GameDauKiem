@@ -63,6 +63,7 @@
     <Compile Include="Assets\BossHealthBarUI.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowInInspectorAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\SectionHeaderAttribute.cs" />
+    <Compile Include="Assets\BossStaticController.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\BoxGroupAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\LabelTextAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\AssetsOnlyAttribute.cs" />
@@ -109,7 +110,10 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\stringstar fields\!readme!.txt" />
+    <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\readme.txt" />
     <None Include="Assets\Sprite Sheets\public-license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\FREE_Samurai 2D Pixel Art v1.2\FREE_Samurai 2D Pixel Art v1.2\License.txt" />
@@ -119,6 +123,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\GandalfHardcore FREE Platformer Assets\GandalfHardcore FREE Platformer Assets\READ ME.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\Pixel Art Tiles and Backgrounds - Woods\Pixel Art Woods Tileset and Background - Read Me.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -127,13 +132,19 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Free Pixel Art Forest\Free Pixel Art Forest\Contact.txt" />
+    <None Include="Assets\Free Pixel Art Forest\Free Pixel Art Forest\license.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\Contact.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Free Pixel Art Forest\Free Pixel Art Forest\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Free Pixel Art Forest\Free Pixel Art Forest\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
