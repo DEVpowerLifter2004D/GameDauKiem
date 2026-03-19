@@ -121,11 +121,13 @@ public class GameManager : MonoBehaviour
         if (bossWarningText)
         {
             bossWarningText.gameObject.SetActive(true);
-            bossWarningText.text = "⚠ WARNING! BOSS INCOMING ⚠";
+            bossWarningText.text = "⚠ WARNING! MA VƯƠNG TỚI CHƠI BROO!! ⚠";
         }
 
         if (bossCountdownText)
         {
+            bossCountdownText.gameObject.SetActive(true); // ← THÊM DÒNG NÀY
+
             for (int i = 3; i > 0; i--)
             {
                 bossCountdownText.text = i.ToString();
@@ -133,11 +135,11 @@ public class GameManager : MonoBehaviour
             }
 
             bossCountdownText.text = "";
+            bossCountdownText.gameObject.SetActive(false); // ← TẮT LẠI SAU KHI XONG
         }
 
         if (bossWarningPanel) bossWarningPanel.SetActive(false);
     }
-
     void StartBossWave()
     {
         isBossWave = true;
