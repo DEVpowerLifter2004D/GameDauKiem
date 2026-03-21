@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Enemy Spawning")]
+    public GameObject[] enemyPrefabs; // ← ĐỔI THÀNH ARRAY
+
     public Transform[] spawnPoints;
     public float spawnCooldown = 2f;
     public int maxEnemiesOnScreen = 15;
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        enemyPrefab = Resources.Load<GameObject>("Enemy");
+        //enemyPrefab = Resources.Load<GameObject>("Enemy");
         bossPrefab = Resources.Load<GameObject>("Boss");
 
         if (enemyPrefab == null)
@@ -147,14 +149,13 @@ public class GameManager : MonoBehaviour
         Debug.Log("👑 Boss Wave Started!");
         UpdateWaveText("⚔ BOSS FIGHT ⚔");
 
-        EnemyController[] enemies = FindObjectsOfType<EnemyController>();
-
-        foreach (var enemy in enemies)
-        {
-            Destroy(enemy.gameObject);
-        }
-
-        currentAliveCount = 0;
+        // // ❌ XÓA ENEMY (đã comment)
+        // EnemyController[] enemies = FindObjectsOfType<EnemyController>();
+        // foreach (var enemy in enemies)
+        // {
+        //     Destroy(enemy.gameObject);
+        // }
+        // currentAliveCount = 0;
 
         SpawnBoss();
         bossSpawned = true;
@@ -162,15 +163,16 @@ public class GameManager : MonoBehaviour
 
     void SpawnEnemy()
     {
-        if (enemyPrefab == null || spawnPoints.Length == 0) return;
+        if (enemyPrefabs.Length == 0 || spawnPoints.Length == 0) return;
 
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
-        Instantiate(enemyPrefab, point.position, Quaternion.identity);
+        // Random chọn enemy type
+        GameObject randomEnemy = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
 
+        Instantiate(randomEnemy, point.position, Quaternion.identity);
         OnEnemySpawned();
     }
-
     void SpawnBoss()
     {
         if (bossPrefab == null) return;
@@ -228,7 +230,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    void Win()
+    public void Win() // ← THÊM PUBLIC
     {
         if (gameOver) return;
 

@@ -260,21 +260,31 @@ public class BossController : MonoBehaviour
     void Die()
     {
         if (isDead) return;
-
         isDead = true;
+
         Debug.Log("💀 BOSS DEFEATED!");
 
+        // Animation
         if (anim != null && anim.enabled)
         {
             anim.SetTrigger("Die");
         }
 
+        // Stop
         if (rb != null)
             rb.linearVelocity = Vector2.zero;
 
+        // Collider
         Collider2D col = GetComponent<Collider2D>();
         if (col != null)
             col.enabled = false;
+
+        // ✅ RƠI BÌNH MÁU (boss rơi nhiều hơn!)
+        EnemyDropLoot dropLoot = GetComponent<EnemyDropLoot>();
+        if (dropLoot != null)
+        {
+            dropLoot.DropLoot();
+        }
 
         Destroy(gameObject, 2f);
     }

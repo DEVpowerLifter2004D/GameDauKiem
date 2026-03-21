@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 7602699977591928272}
   - component: {fileID: 7203381283255665451}
   - component: {fileID: 5937452715823836256}
+  - component: {fileID: 6157914431400793177}
+  - component: {fileID: 5995986166369720261}
+  - component: {fileID: 6511714122074963254}
   m_Layer: 6
   m_Name: 'ArchDemon '
   m_TagString: Untagged
@@ -31,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 57.32, y: -2.31, z: 0}
-  m_LocalScale: {x: -8.7520075, y: 7.4554996, z: 1}
+  m_LocalScale: {x: -5.4542513, y: 5.9509797, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -195,8 +198,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossStaticController
   maxHealth: 10
   attackRange: 12
-  attackDamage: 5
+  attackDamage: 50
   attackCooldown: 2
   attackDuration: 1
   attackDamageDelay: 0.5
-  spriteDefaultFacingLeft: 1
+  spriteDefaultFacingLeft: 0
+--- !u!114 &6157914431400793177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999235384240525513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20067705b458bfc458df6de9d0a76ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDropLoot
+  healthPotionPrefab: {fileID: 3464946313779238489, guid: 9e79837296e58844b8775fd97427ac5f, type: 3}
+  dropChance: 70.7
+  dropForce: 5
+--- !u!114 &5995986166369720261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999235384240525513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20067705b458bfc458df6de9d0a76ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDropLoot
+  healthPotionPrefab: {fileID: 0}
+  dropChance: 70.7
+  dropForce: 5
+--- !u!114 &6511714122074963254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999235384240525513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20067705b458bfc458df6de9d0a76ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDropLoot
+  healthPotionPrefab: {fileID: 0}
+  dropChance: 30
+  dropForce: 5

@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 6484921064398314113}
   - component: {fileID: 8125347792624810380}
   - component: {fileID: 3089662075565792186}
+  - component: {fileID: 4180888665145234077}
   m_Layer: 6
   m_Name: Boss
   m_TagString: Untagged
@@ -373,7 +374,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.3102, y: -8.0234, z: 1}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalScale: {x: 1.8262372, y: 2.4274104, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1104259792625511825}
@@ -426,7 +427,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4753702385071775785, guid: fe85b2d2e6944e4499a95f23d8e08b8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -472,11 +473,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfd23b5686a7304db840003e010c11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
-  maxHealth: 50
-  moveSpeed: 5
-  chaseRange: 10
-  attackRange: 4
-  attackDamage: 4
+  maxHealth: 6
+  moveSpeed: 2
+  chaseRange: 6
+  attackRange: 3
+  attackDamage: 30
   attackCooldown: 2
   attackDuration: 1.2
   attackDamageDelay: 0.5
@@ -628,6 +629,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0600001, y: 1.02}
   m_Direction: 0
+--- !u!114 &4180888665145234077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8606067464218254863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20067705b458bfc458df6de9d0a76ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDropLoot
+  healthPotionPrefab: {fileID: 3464946313779238489, guid: 9e79837296e58844b8775fd97427ac5f, type: 3}
+  dropChance: 30
+  dropForce: 5
 --- !u!1 &8845947936688862095
 GameObject:
   m_ObjectHideFlags: 0
