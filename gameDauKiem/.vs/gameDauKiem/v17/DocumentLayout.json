@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|c:\\users\\acer\\desktop\\gamedaukiem\\gamedaukiem\\assets\\cainos\\pixel art platformer - village props\\script\\graveyardlighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\cainos\\pixel art platformer - village props\\script\\graveyardlighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|c:\\users\\acer\\desktop\\gamedaukiem\\gamedaukiem\\assets\\code map 04\\boarcharge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\code map 04\\boarcharge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|c:\\users\\acer\\desktop\\gamedaukiem\\gamedaukiem\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\cainos\\pixel art platformer - village props\\script\\beeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\cainos\\pixel art platformer - village props\\script\\beeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\bosshealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\bosshealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\bosshealthbarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\bosshealthbarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\enemyheartsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyheartsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\parallaxlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\parallaxlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\debugenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\debugenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\assets\\playerhealthui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,39 +135,87 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GraveyardLighting.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\GraveyardLighting.cs",
-              "RelativeDocumentMoniker": "Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\GraveyardLighting.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\GraveyardLighting.cs",
-              "RelativeToolTip": "Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\GraveyardLighting.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowDIAAAABAAAAAAAAAA==",
+              "Title": "BoarCharge.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Code Map 04\\BoarCharge.cs",
+              "RelativeDocumentMoniker": "Assets\\Code Map 04\\BoarCharge.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Code Map 04\\BoarCharge.cs",
+              "RelativeToolTip": "Assets\\Code Map 04\\BoarCharge.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAkwFIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T04:21:49.728Z",
+              "WhenOpened": "2026-03-21T07:47:17.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BeeAI.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\BeeAI.cs",
-              "RelativeDocumentMoniker": "Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\BeeAI.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\BeeAI.cs",
-              "RelativeToolTip": "Assets\\Cainos\\Pixel Art Platformer - Village Props\\Script\\BeeAI.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwFgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "EnemyHeartsUI.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\EnemyHeartsUI.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemyHeartsUI.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\EnemyHeartsUI.cs",
+              "RelativeToolTip": "Assets\\EnemyHeartsUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T15:31:48.329Z"
+              "WhenOpened": "2026-03-20T08:04:08.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\EnemySpawner.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BossHealthBarUI.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\BossHealthBarUI.cs",
+              "RelativeDocumentMoniker": "Assets\\BossHealthBarUI.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\BossHealthBarUI.cs",
+              "RelativeToolTip": "Assets\\BossHealthBarUI.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.585Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Playerhealthui.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Playerhealthui.cs",
-              "RelativeDocumentMoniker": "Assets\\Playerhealthui.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Playerhealthui.cs",
-              "RelativeToolTip": "Assets\\Playerhealthui.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "BossHealthBar.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\BossHealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\BossHealthBar.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\BossHealthBar.cs",
+              "RelativeToolTip": "Assets\\BossHealthBar.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T03:24:24.173Z"
+              "WhenOpened": "2026-03-20T08:04:08.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BossController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\BossController.cs",
+              "RelativeDocumentMoniker": "Assets\\BossController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\BossController.cs",
+              "RelativeToolTip": "Assets\\BossController.cs",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAgwCcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\GameManager.cs",
+              "RelativeToolTip": "Assets\\GameManager.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAAAAgBAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANsSURBVDhP7dNdaFtlGAfw533POUne5DRNbD7apkVaSrdWMxzFQGalG6KysfVG2dVAbXchyNyNiF6Ila5XMpBdKn6AONx0A9N1Y\u002BsgdLA45\u002Ba6xZg2n61tl8bTfJ2Tc5Lz\u002BXqhF0PwSrzb7/4PD3/\u002BD8Bj/xUCAKCU4vRW2pssJ72XMpfw/a37oIEGPrcP/MQv7cntKc/MzMCavBa48OMF99n8WenErhO1/c/s7z7z0xn2SvZKbWVnpQYfgYUppSi1kfI01MZrLat1HliIOXlnjDhIjLAkRjjyjrJXcZVKpS65Kr\u002BvIjWGTfyeYlPCsix/qmnaedM0X99t3\u002B0FAITixbgDdHjz3va9qVwlN4Iwwj18T4uwhP59/XcTAxNzQRI8fi597tWl9aWhTDWT62A7HoyFxl7IVDLOTXHzAUb4c7Wufsnmt/KcitVIvp4PG2DARN9EJcAHvnXb3BWxLUK1VU36iV8BBnacjLNNOAIMYto21lbxOryGjbFRBKhpIavBPcFRBvaB/aHy8IhhGeEBz8D6wcGDFz1OzyeiJC5ywCVIB1nJJrLSYP9gLtgZfLbRbjxVqBVuTO\u002Bd/uzwrsMvFWtFZ7FavEgZ\u002Bk3uZE7Cq5VVWG\u002BsA4MZsGP7z2uttdmhwFBhfGRcGh8Zlw4MHGiPjo4yKqf66mrdIesyGNRwpIW0T5AFtm20EcWUpwbthA8B4S7oAgYxwGIWMIP1u6W7CkLIenQKvYO93dSkc/Or889dL1wHURX3Xc5fnpu9Mdtzp3SHmJb5CsZ4eqx3zMH6unxgIzbQTR0K1QJrt\u002Bx8/Nc4BT\u002BAIAggC7Kxo\u002BzUCSZfh4PhDkERIrc2by33u/sXDw0fOh4vxjuTfySXEEWLAKAzU\u002B9O2fv4viOSJoU3xA0r0BHwhDyhCLFIVNO0aAu3Oqtq9bfok9GMi3GJ283tQqaWWTj14qn5aG9USgmpXwqNwg8WthKpt1IaGwlF9GareVs11KdVQx2SdOnt5fIydXEuAAAwqfm9IivXAEDGAbyAsuga7\u002BD18u2yPvz88BcGbyATTD13Mqf99SkUUGIj4a2IlTey1eyxm7/fdJaaJeAYDkLuEHQ7uxeQDX1w\u002BuXT8qO9/hsMCOjV/qt1B3Z8RSxyFFE0qVnapKzLk5qmTVqs9TGf4Fv/DD72//kTNRatse7TPbcAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-03-20T08:04:08.587Z"
             },
             {
               "$type": "Document",
@@ -141,10 +225,69 @@
               "RelativeDocumentMoniker": "Assets\\PlayerController.cs",
               "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\PlayerController.cs",
               "RelativeToolTip": "Assets\\PlayerController.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAwKIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwL8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T03:24:22.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T08:04:08.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemyController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\EnemyController.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAYwBQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\CameraFollow.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\CameraFollow.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ParallaxLayer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\ParallaxLayer.cs",
+              "RelativeDocumentMoniker": "Assets\\ParallaxLayer.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\ParallaxLayer.cs",
+              "RelativeToolTip": "Assets\\ParallaxLayer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DebugEnemies.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\DebugEnemies.cs",
+              "RelativeDocumentMoniker": "Assets\\DebugEnemies.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\DebugEnemies.cs",
+              "RelativeToolTip": "Assets\\DebugEnemies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Playerhealthui.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Playerhealthui.cs",
+              "RelativeDocumentMoniker": "Assets\\Playerhealthui.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\GameDauKiem\\gameDauKiem\\Assets\\Playerhealthui.cs",
+              "RelativeToolTip": "Assets\\Playerhealthui.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T08:04:08.954Z"
             }
           ]
         },

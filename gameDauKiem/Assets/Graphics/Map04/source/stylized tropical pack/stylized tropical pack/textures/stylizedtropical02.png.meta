@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 45689ad96be0cf44f905d3d6294d894c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3444244428557510438
+    second: stylizedtropical02_0
+  - first:
+      213: 9105171781399293729
+    second: stylizedtropical02_1
+  - first:
+      213: -6897737811142811038
+    second: stylizedtropical02_2
+  - first:
+      213: -942757322640050545
+    second: stylizedtropical02_3
+  - first:
+      213: 1612206891358642387
+    second: stylizedtropical02_4
+  - first:
+      213: 1095945067757885926
+    second: stylizedtropical02_5
+  - first:
+      213: 8492218474655908730
+    second: stylizedtropical02_6
+  - first:
+      213: 4413332578818033529
+    second: stylizedtropical02_7
+  - first:
+      213: -2650390060315772570
+    second: stylizedtropical02_8
+  - first:
+      213: -193135704726840596
+    second: stylizedtropical02_9
+  - first:
+      213: 2311222180947951575
+    second: stylizedtropical02_10
+  - first:
+      213: 8089562842333874882
+    second: stylizedtropical02_11
+  - first:
+      213: 6399118039128135614
+    second: stylizedtropical02_12
+  - first:
+      213: 2745460149334426503
+    second: stylizedtropical02_13
+  - first:
+      213: -8659653103232878486
+    second: stylizedtropical02_14
+  - first:
+      213: 6616949049631584059
+    second: stylizedtropical02_15
+  - first:
+      213: 4757942423565796196
+    second: stylizedtropical02_16
+  - first:
+      213: -890331976503445720
+    second: stylizedtropical02_17
+  - first:
+      213: -4280221274315402362
+    second: stylizedtropical02_18
+  - first:
+      213: 4080663613462712353
+    second: stylizedtropical02_19
+  - first:
+      213: 765074863920824017
+    second: stylizedtropical02_20
+  - first:
+      213: -4136825395816028086
+    second: stylizedtropical02_21
+  - first:
+      213: -44630972816937018
+    second: stylizedtropical02_22
+  - first:
+      213: 6138573569138769785
+    second: stylizedtropical02_23
+  - first:
+      213: -2919334652820272983
+    second: stylizedtropical02_24
+  - first:
+      213: 1680638267815165561
+    second: stylizedtropical02_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stylizedtropical02_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1283
+        width: 467
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627e9c33f0a6ccf20800000000000000
+      internalID: 3444244428557510438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_1
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1033
+        width: 241
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f27317e711c5e70800000000000000
+      internalID: 9105171781399293729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_2
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1033
+        width: 234
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2626d0da1005640a0800000000000000
+      internalID: -6897737811142811038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_3
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1033
+        width: 244
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8634a2c537aae2f0800000000000000
+      internalID: -942757322640050545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_4
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1033
+        width: 233
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d06ed730a5bf5610800000000000000
+      internalID: 1612206891358642387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1027
+        width: 454
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9dc098b34953f00800000000000000
+      internalID: 1095945067757885926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 790
+        width: 474
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7300e085bb6ad570800000000000000
+      internalID: 8492218474655908730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_7
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 771
+        width: 487
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9778b1cf89e4f3d30800000000000000
+      internalID: 4413332578818033529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_8
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 521
+        width: 236
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669f6a2584ce73bd0800000000000000
+      internalID: -2650390060315772570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_9
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 521
+        width: 240
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceadf4e8918d15df0800000000000000
+      internalID: -193135704726840596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 533
+        width: 479
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dff764045c131020800000000000000
+      internalID: 2311222180947951575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 515
+        width: 464
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca82857b86e34070800000000000000
+      internalID: 8089562842333874882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 377
+        width: 205
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7d60ed3fb3ec850800000000000000
+      internalID: 6399118039128135614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 259
+        width: 321
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783c112b575d91620800000000000000
+      internalID: 2745460149334426503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_14
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 270
+        width: 201
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68f1b7226bb2d780800000000000000
+      internalID: -8659653103232878486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_15
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 279
+        width: 290
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f26204a1024db50800000000000000
+      internalID: 6616949049631584059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_16
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 286
+        width: 313
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4638662fc6b970240800000000000000
+      internalID: 4757942423565796196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 242
+        width: 208
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8273758d8c7e4a3f0800000000000000
+      internalID: -890331976503445720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_18
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 297
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6835c58bd699994c0800000000000000
+      internalID: -4280221274315402362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_19
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 19
+        width: 296
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1209e48afed61a830800000000000000
+      internalID: 4080663613462712353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 103
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deb49209871e9a00800000000000000
+      internalID: 765074863920824017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_21
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 5
+        width: 97
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a482298683b0796c0800000000000000
+      internalID: -4136825395816028086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_22
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 16
+        width: 205
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf244fdd50716ff0800000000000000
+      internalID: -44630972816937018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_23
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 70
+        width: 92
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f3e183328903550800000000000000
+      internalID: 6138573569138769785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_24
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 29
+        width: 300
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8c82eb9907c77d0800000000000000
+      internalID: -2919334652820272983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical02_25
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 6
+        width: 125
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97efc05a993d25710800000000000000
+      internalID: 1680638267815165561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stylizedtropical02_0: 3444244428557510438
+      stylizedtropical02_1: 9105171781399293729
+      stylizedtropical02_10: 2311222180947951575
+      stylizedtropical02_11: 8089562842333874882
+      stylizedtropical02_12: 6399118039128135614
+      stylizedtropical02_13: 2745460149334426503
+      stylizedtropical02_14: -8659653103232878486
+      stylizedtropical02_15: 6616949049631584059
+      stylizedtropical02_16: 4757942423565796196
+      stylizedtropical02_17: -890331976503445720
+      stylizedtropical02_18: -4280221274315402362
+      stylizedtropical02_19: 4080663613462712353
+      stylizedtropical02_2: -6897737811142811038
+      stylizedtropical02_20: 765074863920824017
+      stylizedtropical02_21: -4136825395816028086
+      stylizedtropical02_22: -44630972816937018
+      stylizedtropical02_23: 6138573569138769785
+      stylizedtropical02_24: -2919334652820272983
+      stylizedtropical02_25: 1680638267815165561
+      stylizedtropical02_3: -942757322640050545
+      stylizedtropical02_4: 1612206891358642387
+      stylizedtropical02_5: 1095945067757885926
+      stylizedtropical02_6: 8492218474655908730
+      stylizedtropical02_7: 4413332578818033529
+      stylizedtropical02_8: -2650390060315772570
+      stylizedtropical02_9: -193135704726840596
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

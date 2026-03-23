@@ -9,7 +9,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 'Ground '
+  - ' '
   - Water
   - UI
   - Enemy
@@ -42,11 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Layout1
-    uniqueID: 153157599
-    locked: 0
   - name: Background
     uniqueID: 418752081
+    locked: 0
+  - name: backgroud 1
+    uniqueID: 1645947715
+    locked: 0
+  - name: backgroud 2
+    uniqueID: 4159697837
+    locked: 0
+  - name: backgroud 3
+    uniqueID: 2372183535
+    locked: 0
+  - name: backgroud 4
+    uniqueID: 4001045451
+    locked: 0
+  - name: Layout1
+    uniqueID: 153157599
     locked: 0
   - name: Layout2
     uniqueID: 2438274711
@@ -63,11 +75,17 @@ TagManager:
   - name: Charact
     uniqueID: 414073325
     locked: 0
+  - name: ForceGround
+    uniqueID: 1317268359
+    locked: 0
   - name: Ground
     uniqueID: 2705987751
     locked: 0
-  - name: ForceGround
-    uniqueID: 1317268359
+  - name: Item
+    uniqueID: 520956995
+    locked: 0
+  - name: Items
+    uniqueID: 1666768047
     locked: 0
   - name: Player
     uniqueID: 2964512217
