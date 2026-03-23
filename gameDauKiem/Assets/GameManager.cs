@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Game Rules")]
     public float survivalTime = 60f;
+    public bool requireKeyToWin = true;
 
     [Header("UI")]
     public TextMeshProUGUI timerText;
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
     private float currentTime;
     private float nextSpawnTime;
     private bool gameOver = false;
+    private bool hasCollectedKey = false;
     private int currentAliveCount = 0;
 
     private bool isBossWave = false;
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentTime = 0f;
+        hasCollectedKey = false;
         nextSpawnTime = Time.time + spawnCooldown;
         bossWaveStartTime = survivalTime * bossWaveStartPercent;
 
@@ -79,17 +82,20 @@ public class GameManager : MonoBehaviour
         currentTime += Time.deltaTime;
         UpdateTimerUI();
 
-        float warningTime = bossWaveStartTime - bossWarningTime;
-
-        if (!bossWarningShown && currentTime >= warningTime)
+        if (!requireKeyToWin)
         {
-            bossWarningShown = true;
-            StartCoroutine(ShowBossWarning());
-        }
+            float warningTime = bossWaveStartTime - bossWarningTime;
 
-        if (!isBossWave && currentTime >= bossWaveStartTime)
-        {
-            StartBossWave();
+            if (!bossWarningShown && currentTime >= warningTime)
+            {
+                bossWarningShown = true;
+                StartCoroutine(ShowBossWarning());
+            }
+
+            if (!isBossWave && currentTime >= bossWaveStartTime)
+            {
+                StartBossWave();
+            }
         }
 
         if (!isBossWave)
@@ -102,15 +108,25 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (bossSpawned && bossInstance == null)
+            if (!requireKeyToWin && bossSpawned && bossInstance == null)
             {
                 Win();
             }
         }
 
-        if (currentTime >= survivalTime && isBossWave && bossInstance != null)
+        if (currentTime >= survivalTime)
         {
-            PlayerDied();
+            if (requireKeyToWin)
+            {
+                if (!hasCollectedKey)
+                {
+                    PlayerDied();
+                }
+            }
+            else if (isBossWave && bossInstance != null)
+            {
+                PlayerDied();
+            }
         }
     }
 
@@ -188,7 +204,7 @@ public class GameManager : MonoBehaviour
     {
         if (timerText == null) return;
 
-        float timeLeft = survivalTime - currentTime;
+        float timeLeft = Mathf.Max(0f, survivalTime - currentTime);
 
         int minutes = Mathf.FloorToInt(timeLeft / 60f);
         int seconds = Mathf.FloorToInt(timeLeft % 60);
@@ -228,13 +244,22 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public void PlayerCollectedKey()
+    {
+        if (gameOver) return;
+        if (hasCollectedKey) return;
+
+        hasCollectedKey = true;
+        Win();
+    }
+
     void Win()
     {
         if (gameOver) return;
 
         gameOver = true;
 
-        Debug.Log("🎉 Boss Defeated - You Win!");
+        Debug.Log("You Win!");
 
         if (winPanel) winPanel.SetActive(true);
 
@@ -265,3 +290,4 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 }
+

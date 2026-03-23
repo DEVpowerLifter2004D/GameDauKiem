@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,7 @@ TagManager:
     locked: 0
   - name: backgroud 1
     uniqueID: 1645947715
+    locked: 0
   - name: Layout1
     uniqueID: 153157599
     locked: 0
