@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossStaticController
   maxHealth: 10
   attackRange: 12
-  attackDamage: 50
+  attackDamage: 40
   attackCooldown: 2
   attackDuration: 1
   attackDamageDelay: 0.5

@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|d:\\gamedaukiem5\\gamedaukiem\\gamedaukiem\\assets\\victoryflag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|D:\\gameDAUkiem5\\GameDauKiem\\gameDauKiem\\assets\\victoryflag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{967162BB-7397-7771-24A4-A79976945E39}|Assembly-CSharp.csproj|solutionrelative:assets\\victoryflag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -164,7 +164,7 @@
               "RelativeDocumentMoniker": "Assets\\FakeFlag.cs",
               "ToolTip": "D:\\gameDAUkiem5\\GameDauKiem\\gameDauKiem\\Assets\\FakeFlag.cs",
               "RelativeToolTip": "Assets\\FakeFlag.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAUwDsAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-21T02:36:39.37Z",
               "EditorCaption": ""
@@ -179,8 +179,7 @@
               "RelativeToolTip": "Assets\\VictoryFlag.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T01:57:37.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-21T01:57:37.332Z"
             },
             {
               "$type": "Document",
@@ -312,8 +311,7 @@
               "RelativeToolTip": "Assets\\GameManager.cs",
               "ViewState": "AgIAAOYAAAAAAAAAAAAEwO8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T12:46:29.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T12:46:29.315Z"
             },
             {
               "$type": "Document",

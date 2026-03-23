@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4d5d53d1e4f7147a2c32bef7fb1589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthPickup
-  healAmount: 25
+  healAmount: 100
   consumeWhenFull: 1
   destroyOnUse: 1
 --- !u!50 &7572071440093178425
