@@ -47,10 +47,15 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
+        // ✅ Setup Ground Layer - CHỈ DETECT Ground, KHÔNG detect Player
         groundLayer = LayerMask.GetMask("Ground");
         enemyLayer = LayerMask.GetMask("Enemy");
 
-        Debug.Log($"✅ Ground Layer: {groundLayer.value}, Enemy Layer: {enemyLayer.value}");
+      
+        // ✅ Kiểm tra Collider của Player
+        Collider2D playerCol = GetComponent<Collider2D>();
+      
     }
 
     void Update()
@@ -58,7 +63,6 @@ public class PlayerController : MonoBehaviour
         // 💀 Rơi khỏi map
         if (transform.position.y < fallDeathY)
         {
-            Debug.Log("💀 Player fell off map!");
             currentHealth = 0;
             FindFirstObjectByType<GameManager>()?.PlayerDied();
             return;
@@ -72,8 +76,29 @@ public class PlayerController : MonoBehaviour
         Flip(moveInput);
 
         // 🟢 Check ground
+        // 🟢 Check ground
+        // 🟢 Check ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // 🔍 DEBUG FULL
+        Collider2D[] allHits = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius);
+
+        foreach (Collider2D hit in allHits)
+        {
+            string layerName = LayerMask.LayerToName(hit.gameObject.layer);
+        }
+
+       
+        // 🔍 DEBUG
+        if (!isGrounded && rb.linearVelocity.y == 0)
+        {
+
+            // Kiểm tra xem có collider nào ở dưới không
+            Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius);
+            if (hit != null)
+            {
+            }
+        }
         // 🦘 Jump
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
@@ -114,7 +139,12 @@ public class PlayerController : MonoBehaviour
     void Flip(float moveX)
     {
         if (moveX == 0) return;
-        transform.localScale = new Vector3(moveX > 0 ? 1 : -1, 1, 1);
+
+        // Lấy scale hiện tại và giữ nguyên giá trị tuyệt đối
+        Vector3 scale = transform.localScale;
+        float absX = Mathf.Abs(scale.x);
+        scale.x = absX * (moveX > 0 ? 1 : -1);
+        transform.localScale = scale;
     }
 
     // ❤️ DAMAGE
@@ -144,7 +174,6 @@ public class PlayerController : MonoBehaviour
     // ⚔️ DEAL DAMAGE (FULL SUPPORT)
     public void DealDamage()
     {
-        Debug.Log("🗡️ DealDamage()");
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(
             attackPoint.position,

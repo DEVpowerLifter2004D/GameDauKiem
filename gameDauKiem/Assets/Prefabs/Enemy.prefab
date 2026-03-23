@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 73605889744251820}
   - component: {fileID: 533144778646010283}
   - component: {fileID: 6063378302224821011}
+  - component: {fileID: 2953428088681154026}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -157,7 +158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -372467167
-  m_SortingLayer: 6
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7462242244685289806, guid: 0a4eb8027c9300049b95e6a5a4ba048c, type: 3}
@@ -216,6 +217,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2953428088681154026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300700108153981799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20067705b458bfc458df6de9d0a76ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDropLoot
+  healthPotionPrefab: {fileID: 3464946313779238489, guid: 9e79837296e58844b8775fd97427ac5f, type: 3}
+  dropChance: 49.4
+  dropForce: 5
 --- !u!1 &2882824602538118336
 GameObject:
   m_ObjectHideFlags: 0

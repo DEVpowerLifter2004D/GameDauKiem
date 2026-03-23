@@ -58,7 +58,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -312,7 +312,9 @@ MonoBehaviour:
   attackCooldown: 1.5
   attackDuration: 0.8
   attackDamageDelay: 0.3
+  hitAnimationDuration: 0.3
   groundCheckRadius: 0.2
+  spriteDefaultFacingLeft: 1
 --- !u!95 &1256229745166405640
 Animator:
   serializedVersion: 7

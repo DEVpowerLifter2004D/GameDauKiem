@@ -93,18 +93,39 @@ public class EnemyController : MonoBehaviour
         }
 
     }
-
     void Die()
     {
+        // Trigger death animation
+        if (anim != null)
+        {
+            anim.SetTrigger("Death");
+        }
 
-        // ✅ THAY ĐỔI: Thông báo GameManager
+        // Stop movement
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static;
+
+        // Disable collider
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+            col.enabled = false;
+
+        // ✅ RƠI BÌNH MÁU
+        EnemyDropLoot dropLoot = GetComponent<EnemyDropLoot>();
+        if (dropLoot != null)
+        {
+            dropLoot.DropLoot();
+        }
+
+        // Thông báo GameManager
         GameManager gm = FindFirstObjectByType<GameManager>();
         if (gm != null)
         {
             gm.OnEnemyDied();
         }
 
-        Destroy(gameObject);
+        // Destroy sau 1 giây
+        Destroy(gameObject, 1f);
     }
     void FixedUpdate()
     {
@@ -150,23 +171,17 @@ public class EnemyController : MonoBehaviour
     {
         if (player == null) return;
 
-        // Cập nhật hướng dựa trên vị trí Player
-        int targetDir = (player.position.x > transform.position.x) ? 1 : -1;
-
-        // Chỉ cập nhật direction nếu đủ gần (đang đuổi hoặc đang đánh)
         float distToPlayer = Vector2.Distance(transform.position, player.position);
+
         if (distToPlayer <= chaseRange)
         {
-            direction = targetDir;
+            direction = (player.position.x > transform.position.x) ? 1 : -1;
         }
 
-        // Thực hiện quay đầu
         Vector3 scale = transform.localScale;
-        float flipMultiplier = spriteDefaultFacingLeft ? -1f : 1f;
-        scale.x = originalScaleX * direction * flipMultiplier;
+        scale.x = originalScaleX * direction;
         transform.localScale = scale;
     }
-
     void CancelAttack()
     {
         isAttacking = false;
@@ -308,7 +323,10 @@ public class EnemyController : MonoBehaviour
 
     protected virtual void OnTakeDamage()
     {
-        // Override in child classes for hit animation
+        if (anim != null)
+        {
+            anim.SetTrigger("Hurt");
+        }
     }
 
     // ✅ Getter cho UI

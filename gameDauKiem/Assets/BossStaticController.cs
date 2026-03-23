@@ -15,6 +15,7 @@ public class BossStaticController : MonoBehaviour
 
     [Header("Sprite Flip")]
     public bool spriteDefaultFacingLeft = true;
+    private Rigidbody2D rb;
 
     private Transform player;
     private Animator anim;
@@ -173,6 +174,13 @@ public class BossStaticController : MonoBehaviour
         if (gm != null)
         {
             gm.OnEnemyDied();
+        }
+
+        // ✅ RƠI BÌNH MÁU (boss rơi nhiều hơn!)
+        EnemyDropLoot dropLoot = GetComponent<EnemyDropLoot>();
+        if (dropLoot != null)
+        {
+            dropLoot.DropLoot();
         }
 
         // Destroy sau khi animation chạy xong
