@@ -56,6 +56,7 @@
     <Compile Include="Assets\EnemyDropLoot.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideIfAttribute.cs" />
     <Compile Include="Assets\DebugEnemies.cs" />
+    <Compile Include="Assets\BossFire.cs" />
     <Compile Include="Assets\Code Map 04\BeeAI.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableInPlayModeAttribute.cs" />
     <Compile Include="Assets\EnemySpawner.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\BoundingPlatform.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\MovingPlatform.cs" />
     <Compile Include="Assets\EnemyHeartsUI.cs" />
+    <Compile Include="Assets\BossFireHPBar.cs" />
     <Compile Include="Assets\Code Map 04\GraveyardLighting.cs" />
     <Compile Include="Assets\BossHealthBar.cs" />
     <Compile Include="Assets\ParallaxLayer.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxIfAttribute.cs" />
     <Compile Include="Assets\FakeFlag.cs" />
+    <Compile Include="Assets\BossFireHP.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowIfAttribute.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\IndentAttribute.cs" />
