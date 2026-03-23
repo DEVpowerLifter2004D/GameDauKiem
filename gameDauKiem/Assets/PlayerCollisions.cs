@@ -13,6 +13,19 @@ public class PlayerCollisions : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        TryHandlePickup(other);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Fallback in case pickup collider is not trigger.
+        TryHandlePickup(collision.collider);
+    }
+
+    private void TryHandlePickup(Collider2D other)
+    {
+        if (other == null) return;
+
         if (other.CompareTag("Key"))
         {
             if (gameManager == null)
@@ -34,7 +47,6 @@ public class PlayerCollisions : MonoBehaviour
             healed = playerController.Heal(pickup.healAmount);
         }
 
-        // Nếu được hồi hoặc cho phép ăn khi đầy máu → hủy item
         if (healed || pickup.consumeWhenFull)
         {
             if (pickup.destroyOnUse)

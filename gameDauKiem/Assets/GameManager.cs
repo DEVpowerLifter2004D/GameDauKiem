@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
     {
         currentTime = 0f;
         hasCollectedKey = false;
+
         nextSpawnTime = Time.time + spawnCooldown;
         bossWaveStartTime = survivalTime * bossWaveStartPercent;
 

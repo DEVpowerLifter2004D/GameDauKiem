@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Key
+  - Health
   layers:
   - Default
   - TransparentFX
@@ -87,6 +88,9 @@ TagManager:
     locked: 0
   - name: Items
     uniqueID: 1666768047
+    locked: 0
+  - name: LoadMap
+    uniqueID: 2044617189
     locked: 0
   - name: Player
     uniqueID: 2964512217

@@ -5,73 +5,28 @@ public class HealthPickup : MonoBehaviour
     [Header("Health Pickup")]
     public int healAmount = 1;
 
-    [Tooltip("Cho phép ăn khi đang đầy máu")]
+    [Tooltip("Allow pickup when player is already full HP")]
     public bool consumeWhenFull = true;
 
-    [Tooltip("Hủy item sau khi ăn")]
+    [Tooltip("Destroy potion after pickup")]
     public bool destroyOnUse = true;
 
-    private Rigidbody2D rb;
-    private Collider2D col;
-    private bool hasLanded = false;
-
-    void Start()
+    void Reset()
     {
-        rb = GetComponent<Rigidbody2D>();
-        col = GetComponent<Collider2D>();
+        EnsureTriggerCollider();
+    }
 
-        // ✅ TẮT TRIGGER LÚC MỚI SPAWN (để rơi xuống)
+    void OnValidate()
+    {
+        EnsureTriggerCollider();
+    }
+
+    private void EnsureTriggerCollider()
+    {
+        Collider2D col = GetComponent<Collider2D>();
         if (col != null)
         {
-            col.isTrigger = false;
-        }
-    }
-
-    void Update()
-    {
-        // ✅ Khi chạm đất (velocity gần 0) → BẬT TRIGGER
-        if (!hasLanded && rb != null)
-        {
-            if (Mathf.Abs(rb.linearVelocity.y) < 0.1f && Mathf.Abs(rb.linearVelocity.x) < 0.1f)
-            {
-                hasLanded = true;
-
-                if (col != null)
-                {
-                    col.isTrigger = true; // Bật trigger để Player nhặt được
-                }
-
-                // Freeze để không bị lăn lung tung
-                if (rb != null)
-                {
-                    rb.constraints = RigidbodyConstraints2D.FreezeAll;
-                }
-
-                Debug.Log("💊 Bình máu đã hạ cánh!");
-            }
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            PlayerController player = other.GetComponent<PlayerController>();
-
-            if (player != null)
-            {
-                bool healed = player.Heal(healAmount);
-                Debug.Log($"💊 Player nhặt bình máu! Hồi được: {healed}");
-
-                if (healed || consumeWhenFull)
-                {
-                    if (destroyOnUse)
-                    {
-                        Debug.Log("🗑️ Bình máu biến mất!");
-                        Destroy(gameObject);
-                    }
-                }
-            }
+            col.isTrigger = true;
         }
     }
 }
