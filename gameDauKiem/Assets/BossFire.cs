@@ -3,7 +3,7 @@ using UnityEngine;
 public class BossFire : MonoBehaviour
 {
     [Header("Boss Stats")]
-    public int maxHealth = 2;
+    public int maxHealth = 20;
     [SerializeField] private int currentHealth;
 
     [Header("Movement")]
@@ -35,6 +35,7 @@ public class BossFire : MonoBehaviour
     // =============================================
     void Start()
     {
+        maxHealth = 20; // Quét sạch giá trị trên Inspector, ép về 50
         currentHealth = maxHealth;
         originalScaleX = -Mathf.Abs(transform.localScale.x);
 
