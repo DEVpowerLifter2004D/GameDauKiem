@@ -52,26 +52,47 @@ public class HealthPickup : MonoBehaviour
         }
     }
 
+    private void Pickup(GameObject obj)
+    {
+        PlayerController player = obj.GetComponentInParent<PlayerController>();
+
+        if (player != null)
+        {
+            bool healed = player.Heal(healAmount);
+            Debug.Log($"💊 Player nhặt bình máu! Hồi được: {healed}");
+
+            if (healed || consumeWhenFull)
+            {
+                if (destroyOnUse)
+                {
+                    Debug.Log("🗑️ Bình máu biến mất!");
+                    Destroy(gameObject);
+                }
+            }
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            PlayerController player = other.GetComponent<PlayerController>();
+            Pickup(other.gameObject);
+        }
+    }
 
-            if (player != null)
-            {
-                bool healed = player.Heal(healAmount);
-                Debug.Log($"💊 Player nhặt bình máu! Hồi được: {healed}");
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Pickup(other.gameObject);
+        }
+    }
 
-                if (healed || consumeWhenFull)
-                {
-                    if (destroyOnUse)
-                    {
-                        Debug.Log("🗑️ Bình máu biến mất!");
-                        Destroy(gameObject);
-                    }
-                }
-            }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Pickup(collision.gameObject);
         }
     }
 }
