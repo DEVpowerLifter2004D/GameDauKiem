@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: a89977efadc314c4cb1d5fd2c48856bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6284628066658749082
+    second: stylizedtropical01_Roughness_0
+  - first:
+      213: -8726419443158481988
+    second: stylizedtropical01_Roughness_1
+  - first:
+      213: -44878711091458088
+    second: stylizedtropical01_Roughness_2
+  - first:
+      213: 2739176555383897543
+    second: stylizedtropical01_Roughness_3
+  - first:
+      213: -7528388864074734981
+    second: stylizedtropical01_Roughness_4
+  - first:
+      213: 3860528448721450254
+    second: stylizedtropical01_Roughness_5
+  - first:
+      213: 4319981332467458904
+    second: stylizedtropical01_Roughness_6
+  - first:
+      213: -1005441249323527664
+    second: stylizedtropical01_Roughness_7
+  - first:
+      213: -3921991146108640829
+    second: stylizedtropical01_Roughness_8
+  - first:
+      213: -1533946834855381402
+    second: stylizedtropical01_Roughness_9
+  - first:
+      213: 8492450483553518731
+    second: stylizedtropical01_Roughness_10
+  - first:
+      213: 2032876241115965279
+    second: stylizedtropical01_Roughness_11
+  - first:
+      213: -6640777373730949538
+    second: stylizedtropical01_Roughness_12
+  - first:
+      213: 5212463316001456527
+    second: stylizedtropical01_Roughness_13
+  - first:
+      213: 2233801720280870053
+    second: stylizedtropical01_Roughness_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 513
+        height: 1536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a05a2edeb773750800000000000000
+      internalID: 6284628066658749082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_1
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1028
+        width: 246
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb30a7140c785e680800000000000000
+      internalID: -8726419443158481988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_2
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1027
+        width: 248
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df8a6fcc0f806ff0800000000000000
+      internalID: -44878711091458088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_3
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1025
+        width: 248
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd3cb87092830620800000000000000
+      internalID: 2739176555383897543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_4
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1028
+        width: 247
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72a1d9173ac58790800000000000000
+      internalID: -7528388864074734981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_5
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 532
+        width: 228
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05f45f8b2a539530800000000000000
+      internalID: 3860528448721450254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_6
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 532
+        width: 222
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853aa063228a3fb30800000000000000
+      internalID: 4319981332467458904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_7
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 652
+        width: 465
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012db83c284fb02f0800000000000000
+      internalID: -1005441249323527664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 402
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1a7fb05d94299c0800000000000000
+      internalID: -3921991146108640829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_9
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 49
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6663c1c1b7356bae0800000000000000
+      internalID: -1533946834855381402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_10
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 411
+        width: 408
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b844dc848be3bd570800000000000000
+      internalID: 8492450483553518731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_11
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 458
+        width: 139
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f576c00bb2a363c10800000000000000
+      internalID: 2032876241115965279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_12
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 453
+        width: 117
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56b056b92837d3a0800000000000000
+      internalID: -6640777373730949538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_13
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 467
+        width: 134
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f818503e4c3665840800000000000000
+      internalID: 5212463316001456527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stylizedtropical01_Roughness_14
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 7
+        width: 429
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac6ff354de000f10800000000000000
+      internalID: 2233801720280870053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stylizedtropical01_Roughness_0: 6284628066658749082
+      stylizedtropical01_Roughness_1: -8726419443158481988
+      stylizedtropical01_Roughness_10: 8492450483553518731
+      stylizedtropical01_Roughness_11: 2032876241115965279
+      stylizedtropical01_Roughness_12: -6640777373730949538
+      stylizedtropical01_Roughness_13: 5212463316001456527
+      stylizedtropical01_Roughness_14: 2233801720280870053
+      stylizedtropical01_Roughness_2: -44878711091458088
+      stylizedtropical01_Roughness_3: 2739176555383897543
+      stylizedtropical01_Roughness_4: -7528388864074734981
+      stylizedtropical01_Roughness_5: 3860528448721450254
+      stylizedtropical01_Roughness_6: 4319981332467458904
+      stylizedtropical01_Roughness_7: -1005441249323527664
+      stylizedtropical01_Roughness_8: -3921991146108640829
+      stylizedtropical01_Roughness_9: -1533946834855381402
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

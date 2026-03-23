@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Enemy Spawning")]
+    public GameObject[] enemyPrefabs; // dùng array
     public Transform[] spawnPoints;
     public float spawnCooldown = 2f;
     public int maxEnemiesOnScreen = 15;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Game Rules")]
     public float survivalTime = 60f;
+    public bool requireKeyToWin = false; // thêm từ code 2
 
     [Header("UI")]
     public TextMeshProUGUI timerText;
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     private float currentTime;
     private float nextSpawnTime;
     private bool gameOver = false;
+    private bool hasCollectedKey = false;
     private int currentAliveCount = 0;
 
     private bool isBossWave = false;
@@ -41,17 +44,14 @@ public class GameManager : MonoBehaviour
     private float bossWaveStartTime;
 
     private GameObject bossInstance;
-
-    private GameObject enemyPrefab;
     private GameObject bossPrefab;
 
     void Awake()
     {
-        enemyPrefab = Resources.Load<GameObject>("Enemy");
         bossPrefab = Resources.Load<GameObject>("Boss");
 
-        if (enemyPrefab == null)
-            Debug.LogError("❌ Enemy prefab not found in Resources!");
+        if (enemyPrefabs.Length == 0)
+            Debug.LogError("❌ Enemy Prefabs chưa gán trong Inspector!");
 
         if (bossPrefab == null)
             Debug.LogError("❌ Boss prefab not found in Resources!");
@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentTime = 0f;
+        hasCollectedKey = false;
         nextSpawnTime = Time.time + spawnCooldown;
         bossWaveStartTime = survivalTime * bossWaveStartPercent;
 
@@ -69,7 +70,7 @@ public class GameManager : MonoBehaviour
 
         UpdateWaveText("ENEMY WAVE");
 
-        Debug.Log($"🎮 Game Start | Boss Warning at {bossWaveStartTime - bossWarningTime}s | Boss at {bossWaveStartTime}s");
+        Debug.Log($"🎮 Game Start | Boss at {bossWaveStartTime}s");
     }
 
     void Update()
@@ -79,19 +80,24 @@ public class GameManager : MonoBehaviour
         currentTime += Time.deltaTime;
         UpdateTimerUI();
 
-        float warningTime = bossWaveStartTime - bossWarningTime;
-
-        if (!bossWarningShown && currentTime >= warningTime)
+        // ===== BOSS LOGIC =====
+        if (!requireKeyToWin)
         {
-            bossWarningShown = true;
-            StartCoroutine(ShowBossWarning());
+            float warningTime = bossWaveStartTime - bossWarningTime;
+
+            if (!bossWarningShown && currentTime >= warningTime)
+            {
+                bossWarningShown = true;
+                StartCoroutine(ShowBossWarning());
+            }
+
+            if (!isBossWave && currentTime >= bossWaveStartTime)
+            {
+                StartBossWave();
+            }
         }
 
-        if (!isBossWave && currentTime >= bossWaveStartTime)
-        {
-            StartBossWave();
-        }
-
+        // ===== SPAWN ENEMY =====
         if (!isBossWave)
         {
             if (Time.time >= nextSpawnTime && currentAliveCount < maxEnemiesOnScreen)
@@ -102,15 +108,27 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (bossSpawned && bossInstance == null)
+            // win khi giết boss
+            if (!requireKeyToWin && bossSpawned && bossInstance == null)
             {
                 Win();
             }
         }
 
-        if (currentTime >= survivalTime && isBossWave && bossInstance != null)
+        // ===== CHECK LOSE =====
+        if (currentTime >= survivalTime)
         {
-            PlayerDied();
+            if (requireKeyToWin)
+            {
+                if (!hasCollectedKey)
+                {
+                    PlayerDied();
+                }
+            }
+            else if (isBossWave && bossInstance != null)
+            {
+                PlayerDied();
+            }
         }
     }
 
@@ -121,12 +139,12 @@ public class GameManager : MonoBehaviour
         if (bossWarningText)
         {
             bossWarningText.gameObject.SetActive(true);
-            bossWarningText.text = "⚠ WARNING! MA VƯƠNG TỚI CHƠI BROO!! ⚠";
+            bossWarningText.text = "⚠ WARNING! MA VƯƠNG TỚI!! ⚠";
         }
 
         if (bossCountdownText)
         {
-            bossCountdownText.gameObject.SetActive(true); // ← THÊM DÒNG NÀY
+            bossCountdownText.gameObject.SetActive(true);
 
             for (int i = 3; i > 0; i--)
             {
@@ -135,11 +153,12 @@ public class GameManager : MonoBehaviour
             }
 
             bossCountdownText.text = "";
-            bossCountdownText.gameObject.SetActive(false); // ← TẮT LẠI SAU KHI XONG
+            bossCountdownText.gameObject.SetActive(false);
         }
 
         if (bossWarningPanel) bossWarningPanel.SetActive(false);
     }
+
     void StartBossWave()
     {
         isBossWave = true;
@@ -147,8 +166,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("👑 Boss Wave Started!");
         UpdateWaveText("⚔ BOSS FIGHT ⚔");
 
+        // XÓA ENEMY
         EnemyController[] enemies = FindObjectsOfType<EnemyController>();
-
         foreach (var enemy in enemies)
         {
             Destroy(enemy.gameObject);
@@ -162,12 +181,12 @@ public class GameManager : MonoBehaviour
 
     void SpawnEnemy()
     {
-        if (enemyPrefab == null || spawnPoints.Length == 0) return;
+        if (enemyPrefabs.Length == 0 || spawnPoints.Length == 0) return;
 
         Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
+        GameObject randomEnemy = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
 
-        Instantiate(enemyPrefab, point.position, Quaternion.identity);
-
+        Instantiate(randomEnemy, point.position, Quaternion.identity);
         OnEnemySpawned();
     }
 
@@ -188,7 +207,7 @@ public class GameManager : MonoBehaviour
     {
         if (timerText == null) return;
 
-        float timeLeft = survivalTime - currentTime;
+        float timeLeft = Mathf.Max(0f, survivalTime - currentTime);
 
         int minutes = Mathf.FloorToInt(timeLeft / 60f);
         int seconds = Mathf.FloorToInt(timeLeft % 60);
@@ -210,9 +229,7 @@ public class GameManager : MonoBehaviour
     public void OnEnemyDied()
     {
         currentAliveCount--;
-
-        if (currentAliveCount < 0)
-            currentAliveCount = 0;
+        if (currentAliveCount < 0) currentAliveCount = 0;
     }
 
     public void PlayerDied()
@@ -220,7 +237,6 @@ public class GameManager : MonoBehaviour
         if (gameOver) return;
 
         gameOver = true;
-
         Debug.Log("💀 Player Died");
 
         if (losePanel) losePanel.SetActive(true);
@@ -228,13 +244,20 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public void PlayerCollectedKey()
+    {
+        if (gameOver || hasCollectedKey) return;
+
+        hasCollectedKey = true;
+        Win();
+    }
+
     void Win()
     {
         if (gameOver) return;
 
         gameOver = true;
-
-        Debug.Log("🎉 Boss Defeated - You Win!");
+        Debug.Log("🎉 You Win!");
 
         if (winPanel) winPanel.SetActive(true);
 
@@ -244,7 +267,6 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
