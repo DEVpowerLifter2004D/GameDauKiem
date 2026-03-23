@@ -50,9 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\EnemyHealth.cs" />
+    <Compile Include="Assets\Code Map 04\BackgroundTransition.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\Elevator.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxAttribute.cs" />
-    <Compile Include="Assets\BackgroundTransition.cs" />
     <Compile Include="Assets\EnemyDropLoot.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideIfAttribute.cs" />
     <Compile Include="Assets\DebugEnemies.cs" />
@@ -91,6 +91,7 @@
     <Compile Include="Assets\HealthPickup.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxIfAttribute.cs" />
+    <Compile Include="Assets\Code Map 04\BoarCharge.cs" />
     <Compile Include="Assets\FakeFlag.cs" />
     <Compile Include="Assets\BossFireHP.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowIfAttribute.cs" />
@@ -125,6 +126,7 @@
     <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\stringstar fields\!readme!.txt" />
+    <None Include="Assets\Graphics\Map04\source\stylized tropical pack\stylized tropical pack\Readme.txt" />
     <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\readme.txt" />
     <None Include="Assets\Sprite Sheets\public-license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
