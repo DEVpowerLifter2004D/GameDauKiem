@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [Header("Attack")]
     public Transform attackPoint;
     public float attackRadius = 0.5f;
-    public int attackDamage = 1;
+    public int attackDamage = 5;
     public float attackDelay = 0.3f;
 
     private LayerMask groundLayer;
@@ -154,6 +154,15 @@ public class PlayerController : MonoBehaviour
 
         foreach (Collider2D hit in hits)
         {
+            // 🔥 THÊM ĐOẠN NÀY
+            BossFire bossFire = hit.GetComponent<BossFire>();
+            if (bossFire != null)
+            {
+                Debug.Log("🔥 HIT BOSS FIRE"); // test
+                bossFire.TakeDamage(attackDamage);
+                continue;
+            }
+
             // ✅ Boss static (ArchDemon)
             BossStaticController bossStatic = hit.GetComponent<BossStaticController>();
             if (bossStatic != null)
