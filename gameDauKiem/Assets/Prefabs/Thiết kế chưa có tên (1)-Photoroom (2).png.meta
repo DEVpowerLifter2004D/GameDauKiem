@@ -1,0 +1,2470 @@
+fileFormatVersion: 2
+guid: 5571ab7d64a78cf45a6b8ce315d4c4bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2769971845877365763
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_0"
+  - first:
+      213: -8936468879394812619
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_1"
+  - first:
+      213: 4206885808277451753
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_2"
+  - first:
+      213: -6119619090976049846
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_3"
+  - first:
+      213: -3594692865667336995
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_4"
+  - first:
+      213: -462387394702504149
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_5"
+  - first:
+      213: -3211448213084754627
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_6"
+  - first:
+      213: -3635035619587743108
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_7"
+  - first:
+      213: -4662270617741705440
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_8"
+  - first:
+      213: 1553607459560435310
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_9"
+  - first:
+      213: -6879454818235099209
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_10"
+  - first:
+      213: 2628253457243076749
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_11"
+  - first:
+      213: 479731088715040728
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_12"
+  - first:
+      213: 8533398594720982404
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_13"
+  - first:
+      213: 7535288955660224978
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_14"
+  - first:
+      213: -1266299099386428113
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_15"
+  - first:
+      213: -2467723937814131990
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_16"
+  - first:
+      213: -950294709396644153
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_17"
+  - first:
+      213: -8792050207695174520
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_18"
+  - first:
+      213: 2363664924316112777
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_19"
+  - first:
+      213: 2114720511596175600
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_20"
+  - first:
+      213: 6953431931853650117
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_21"
+  - first:
+      213: -2149598194479829957
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_22"
+  - first:
+      213: -1935339682128617889
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_23"
+  - first:
+      213: -8616112434388510251
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_24"
+  - first:
+      213: -1681232551065586662
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_25"
+  - first:
+      213: 6422458498477910788
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_26"
+  - first:
+      213: -3159567717597005129
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_27"
+  - first:
+      213: 4596809079817320514
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_28"
+  - first:
+      213: 1610702221773366515
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_29"
+  - first:
+      213: 2234987561221197519
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_30"
+  - first:
+      213: 8528558556629162772
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_31"
+  - first:
+      213: -6136561337824912380
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_32"
+  - first:
+      213: -8465152321867334761
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_33"
+  - first:
+      213: 8809987282789399994
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_34"
+  - first:
+      213: -935965137142998515
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_35"
+  - first:
+      213: -3678477902886890838
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_36"
+  - first:
+      213: 2034804343874637536
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_37"
+  - first:
+      213: 7362108202009936549
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_38"
+  - first:
+      213: -1447242455859874221
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_39"
+  - first:
+      213: -3233209190891681792
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_40"
+  - first:
+      213: -1887753148602137398
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_41"
+  - first:
+      213: 6955999957458531811
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_42"
+  - first:
+      213: -1927824425907461772
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_43"
+  - first:
+      213: 4258072091493712988
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_44"
+  - first:
+      213: 2825006983634768388
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_45"
+  - first:
+      213: 4030893711410579160
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_46"
+  - first:
+      213: -4441445107991985960
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_47"
+  - first:
+      213: 2479209574139832318
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_48"
+  - first:
+      213: 4624223275107909595
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_49"
+  - first:
+      213: 7755021611585478291
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_50"
+  - first:
+      213: 3425728419299357207
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_51"
+  - first:
+      213: 1144501690628028619
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_52"
+  - first:
+      213: -8649821405372644877
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_53"
+  - first:
+      213: 5531620223840134620
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_54"
+  - first:
+      213: 9194667703437326281
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_55"
+  - first:
+      213: -4886593330203331841
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_56"
+  - first:
+      213: -5950381545741358841
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_57"
+  - first:
+      213: 1080417915462751825
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_58"
+  - first:
+      213: 251269751347524669
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_59"
+  - first:
+      213: -6409529147242201314
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_60"
+  - first:
+      213: -4381156823516921739
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_61"
+  - first:
+      213: 6864096631950496683
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_62"
+  - first:
+      213: -6292675156857924650
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_63"
+  - first:
+      213: 9027383345176460733
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_64"
+  - first:
+      213: -8963108003784620259
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_65"
+  - first:
+      213: 8612178529904637799
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_66"
+  - first:
+      213: -5656548984830983853
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_67"
+  - first:
+      213: -4896257498088777733
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_68"
+  - first:
+      213: 8757850860166359704
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_69"
+  - first:
+      213: 8586001590007125887
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_70"
+  - first:
+      213: 4903180005181630924
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_71"
+  - first:
+      213: 6653062003482806978
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_72"
+  - first:
+      213: -5262519703234496486
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_73"
+  - first:
+      213: -6062401012149705515
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_74"
+  - first:
+      213: 1027792013277816827
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_75"
+  - first:
+      213: 6647882389895769316
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_76"
+  - first:
+      213: -3312063034587281824
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_77"
+  - first:
+      213: 4367426320982465959
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_78"
+  - first:
+      213: -5282477961569173335
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_79"
+  - first:
+      213: 5539433244503865441
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_80"
+  - first:
+      213: -6786846002450048042
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_81"
+  - first:
+      213: 7400973104714504830
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_82"
+  - first:
+      213: -1776651189025236750
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_83"
+  - first:
+      213: 6342944211909112769
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_84"
+  - first:
+      213: 6483772109046424749
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_85"
+  - first:
+      213: 6407021820200371784
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_86"
+  - first:
+      213: -1334127345499078987
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_87"
+  - first:
+      213: -3751160287160534509
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_88"
+  - first:
+      213: 924699662689764632
+    second: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_89"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 657
+        width: 1920
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df385a838451f89d0800000000000000
+      internalID: -2769971845877365763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_1"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 621
+        width: 69
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53dc651d6e84bf380800000000000000
+      internalID: -8936468879394812619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_2"
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 648
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e372058a5cd16a30800000000000000
+      internalID: 4206885808277451753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_3"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 614
+        width: 94
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a457ca12cdeb21ba0800000000000000
+      internalID: -6119619090976049846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_4"
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 636
+        width: 81
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4744952e51d1ec0800000000000000
+      internalID: -3594692865667336995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_5"
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 639
+        width: 75
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f83264d154599f0800000000000000
+      internalID: -462387394702504149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_6"
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 639
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d258c7dd4ae63d0800000000000000
+      internalID: -3211448213084754627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_7"
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 628
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72a49cfc52cd8dc0800000000000000
+      internalID: -3635035619587743108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_8"
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 645
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fb3ce23994c4fb0800000000000000
+      internalID: -4662270617741705440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_9"
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 652
+        width: 83
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e2f7bc0c58f8510800000000000000
+      internalID: 1553607459560435310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_10"
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 656
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b75fbeaa444780a0800000000000000
+      internalID: -6879454818235099209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_11"
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 645
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d887aa2289e697420800000000000000
+      internalID: 2628253457243076749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_12"
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 640
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7429a22e858a600800000000000000
+      internalID: 479731088715040728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_13"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 573
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485692d5fc8bc6670800000000000000
+      internalID: 8533398594720982404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_14"
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 630
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d94d0aa169b29860800000000000000
+      internalID: 7535288955660224978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_15"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 609
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25cca1ada33d6ee0800000000000000
+      internalID: -1266299099386428113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_16"
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 621
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea4cd23722e0cdd0800000000000000
+      internalID: -2467723937814131990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_17"
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 636
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ceda762fffdfc2f0800000000000000
+      internalID: -950294709396644153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_18"
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 639
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8840eea1bec5cf580800000000000000
+      internalID: -8792050207695174520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_19"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 609
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98799e5b9bc6dc020800000000000000
+      internalID: 2363664924316112777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_20"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 622
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f02cecd91ff85d10800000000000000
+      internalID: 2114720511596175600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_21"
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 606
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8befb408d8f7060800000000000000
+      internalID: 6953431931853650117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_22"
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 621
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c6538c4d71b22e0800000000000000
+      internalID: -2149598194479829957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_23"
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 576
+        width: 104
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e910f10da4425e0800000000000000
+      internalID: -1935339682128617889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_24"
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 621
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9527b146b6d6880800000000000000
+      internalID: -8616112434388510251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_25"
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 611
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1479e007ef0ba8e0800000000000000
+      internalID: -1681232551065586662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_26"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 600
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40be67a0af7212950800000000000000
+      internalID: 6422458498477910788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_27"
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 581
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bab6d4a6e5f624d0800000000000000
+      internalID: -3159567717597005129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_28"
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 574
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2483dcec0852bcf30800000000000000
+      internalID: 4596809079817320514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_29"
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 548
+        width: 83
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4ebb7032d5a5610800000000000000
+      internalID: 1610702221773366515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_30"
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 496
+        width: 134
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce81007855440f10800000000000000
+      internalID: 2234987561221197519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_31"
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 579
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41bdffd22d68b5670800000000000000
+      internalID: 8528558556629162772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_32"
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 591
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40cdc84e9fd86daa0800000000000000
+      internalID: -6136561337824912380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_33"
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 566
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b368540dcb58a80800000000000000
+      internalID: -8465152321867334761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_34"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 513
+        width: 95
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abdfe52a1cc534a70800000000000000
+      internalID: 8809987282789399994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_35"
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 555
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a117eaaa8c203f0800000000000000
+      internalID: -935965137142998515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_36"
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 549
+        width: 77
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa29d4436db63fcc0800000000000000
+      internalID: -3678477902886890838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_37"
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 539
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eec11815c31d3c10800000000000000
+      internalID: 2034804343874637536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_38"
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 546
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2cac257667b2660800000000000000
+      internalID: 7362108202009936549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_39"
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 563
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356bb9a77ac5aebe0800000000000000
+      internalID: -1447242455859874221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_40"
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 570
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0088f540f555123d0800000000000000
+      internalID: -3233209190891681792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_41"
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 509
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4c1f9538a5dc5e0800000000000000
+      internalID: -1887753148602137398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_42"
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 536
+        width: 57
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5b2f95b1da88060800000000000000
+      internalID: 6955999957458531811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_43"
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 531
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471e67016edfe35e0800000000000000
+      internalID: -1927824425907461772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_44"
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 525
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54cc79c106b71b30800000000000000
+      internalID: 4258072091493712988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_45"
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 540
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4025c8352e0743720800000000000000
+      internalID: 2825006983634768388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_46"
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 525
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6cbf3597c90f730800000000000000
+      internalID: 4030893711410579160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_47"
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 531
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0cdb0c431dc52c0800000000000000
+      internalID: -4441445107991985960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_48"
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 507
+        width: 99
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef72a56e8fbe76220800000000000000
+      internalID: 2479209574139832318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_49"
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 514
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf76ea819a8c2040800000000000000
+      internalID: 4624223275107909595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_50"
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 489
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e9700611f5f9b60800000000000000
+      internalID: 7755021611585478291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_51"
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 510
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7127c49d8d1aa8f20800000000000000
+      internalID: 3425728419299357207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_52"
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 514
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8b7ba493612ef00800000000000000
+      internalID: 1144501690628028619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_53"
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 516
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f18132b249a5f780800000000000000
+      internalID: -8649821405372644877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_54"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 492
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5ab5a294344cc40800000000000000
+      internalID: 5531620223840134620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_55"
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 468
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c773239f850a9f70800000000000000
+      internalID: 9194667703437326281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_56"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 486
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2ff67a1455f2cb0800000000000000
+      internalID: -4886593330203331841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_57"
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 477
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709eb08b28ffb6da0800000000000000
+      internalID: -5950381545741358841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_58"
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 482
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156102cae5a6efe00800000000000000
+      internalID: 1080417915462751825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_59"
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 480
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34bedfe180bc7300800000000000000
+      internalID: 251269751347524669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_60"
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 495
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fbd112337cc07a0800000000000000
+      internalID: -6409529147242201314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_61"
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 470
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570cef4d4110333c0800000000000000
+      internalID: -4381156823516921739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_62"
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 458
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba35d5be48b224f50800000000000000
+      internalID: 6864096631950496683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_63"
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 462
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3de8ce84deba8a0800000000000000
+      internalID: -6292675156857924650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_64"
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 444
+        width: 51
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd3584c255b74d70800000000000000
+      internalID: 9027383345176460733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_65"
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 471
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1705f652c4ac9380800000000000000
+      internalID: -8963108003784620259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_66"
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 453
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76736316eba948770800000000000000
+      internalID: 8612178529904637799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_67"
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 463
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3518d800ba6ef71b0800000000000000
+      internalID: -5656548984830983853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_68"
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 405
+        width: 89
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf753993fbffc0cb0800000000000000
+      internalID: -4896257498088777733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_69"
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 439
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89aa01cc4f22a8970800000000000000
+      internalID: 8757850860166359704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_70"
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 426
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77505d94fa972770800000000000000
+      internalID: 8586001590007125887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_71"
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 414
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc926ae8c389b0440800000000000000
+      internalID: 4903180005181630924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_72"
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 438
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cacd3a84ac645c50800000000000000
+      internalID: 6653062003482806978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_73"
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 435
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18b6314636c7f6b0800000000000000
+      internalID: -5262519703234496486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_74"
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 420
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d429d046660edba0800000000000000
+      internalID: -6062401012149705515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_75"
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 408
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7686ef363734e00800000000000000
+      internalID: 1027792013277816827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_76"
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 426
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecef46cfc5024c50800000000000000
+      internalID: 6647882389895769316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_77"
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 402
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06609b5d7303902d0800000000000000
+      internalID: -3312063034587281824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_78"
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 399
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7add9dc69173c9c30800000000000000
+      internalID: 4367426320982465959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_79"
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 387
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a007de184ed0b6b0800000000000000
+      internalID: -5282477961569173335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_80"
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 366
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16874abcf2500ec40800000000000000
+      internalID: 5539433244503865441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_81"
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 387
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db5faed48740d1a0800000000000000
+      internalID: -6786846002450048042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_82"
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 354
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a5ab2a3d985b660800000000000000
+      internalID: 7400973104714504830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_83"
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 371
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8106c18211857e0800000000000000
+      internalID: -1776651189025236750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_84"
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 366
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c376f4872aa60850800000000000000
+      internalID: 6342944211909112769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_85"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da42c44716cfaf950800000000000000
+      internalID: 6483772109046424749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_86"
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 339
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846483d46605ae850800000000000000
+      internalID: 6407021820200371784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_87"
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 340
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be746e6f3a3c7de0800000000000000
+      internalID: -1334127345499078987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_88"
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 344
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a7e34e79331fbc0800000000000000
+      internalID: -3751160287160534509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_89"
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 341
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8150c86a17135dc00800000000000000
+      internalID: 924699662689764632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_0": -2769971845877365763
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_1": -8936468879394812619
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_10": -6879454818235099209
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_11": 2628253457243076749
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_12": 479731088715040728
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_13": 8533398594720982404
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_14": 7535288955660224978
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_15": -1266299099386428113
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_16": -2467723937814131990
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_17": -950294709396644153
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_18": -8792050207695174520
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_19": 2363664924316112777
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_2": 4206885808277451753
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_20": 2114720511596175600
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_21": 6953431931853650117
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_22": -2149598194479829957
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_23": -1935339682128617889
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_24": -8616112434388510251
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_25": -1681232551065586662
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_26": 6422458498477910788
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_27": -3159567717597005129
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_28": 4596809079817320514
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_29": 1610702221773366515
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_3": -6119619090976049846
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_30": 2234987561221197519
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_31": 8528558556629162772
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_32": -6136561337824912380
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_33": -8465152321867334761
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_34": 8809987282789399994
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_35": -935965137142998515
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_36": -3678477902886890838
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_37": 2034804343874637536
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_38": 7362108202009936549
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_39": -1447242455859874221
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_4": -3594692865667336995
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_40": -3233209190891681792
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_41": -1887753148602137398
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_42": 6955999957458531811
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_43": -1927824425907461772
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_44": 4258072091493712988
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_45": 2825006983634768388
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_46": 4030893711410579160
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_47": -4441445107991985960
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_48": 2479209574139832318
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_49": 4624223275107909595
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_5": -462387394702504149
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_50": 7755021611585478291
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_51": 3425728419299357207
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_52": 1144501690628028619
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_53": -8649821405372644877
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_54": 5531620223840134620
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_55": 9194667703437326281
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_56": -4886593330203331841
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_57": -5950381545741358841
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_58": 1080417915462751825
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_59": 251269751347524669
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_6": -3211448213084754627
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_60": -6409529147242201314
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_61": -4381156823516921739
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_62": 6864096631950496683
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_63": -6292675156857924650
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_64": 9027383345176460733
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_65": -8963108003784620259
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_66": 8612178529904637799
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_67": -5656548984830983853
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_68": -4896257498088777733
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_69": 8757850860166359704
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_7": -3635035619587743108
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_70": 8586001590007125887
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_71": 4903180005181630924
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_72": 6653062003482806978
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_73": -5262519703234496486
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_74": -6062401012149705515
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_75": 1027792013277816827
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_76": 6647882389895769316
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_77": -3312063034587281824
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_78": 4367426320982465959
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_79": -5282477961569173335
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_8": -4662270617741705440
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_80": 5539433244503865441
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_81": -6786846002450048042
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_82": 7400973104714504830
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_83": -1776651189025236750
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_84": 6342944211909112769
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_85": 6483772109046424749
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_86": 6407021820200371784
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_87": -1334127345499078987
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_88": -3751160287160534509
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_89": 924699662689764632
+      "Thi\u1EBFt k\u1EBF ch\u01B0a c\xF3 t\xEAn (1)-Photoroom (2)_9": 1553607459560435310
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

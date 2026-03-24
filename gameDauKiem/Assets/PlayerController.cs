@@ -36,12 +36,22 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private bool isGrounded;
     private bool isAttacking = false;
+    private bool defaultFlipX;
+    private float initialGroundCheckX;
+    private float initialAttackPointX;
+    private PlayerDamageFlashUI damageFlashUI;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+
+        defaultFlipX = sr != null && sr.flipX;
+        if (groundCheck != null) initialGroundCheckX = groundCheck.localPosition.x;
+        if (attackPoint != null) initialAttackPointX = attackPoint.localPosition.x;
+
+        damageFlashUI = FindFirstObjectByType<PlayerDamageFlashUI>();
     }
 
     void Start()
@@ -140,17 +150,41 @@ public class PlayerController : MonoBehaviour
     {
         if (moveX == 0) return;
 
-        // Lấy scale hiện tại và giữ nguyên giá trị tuyệt đối
-        Vector3 scale = transform.localScale;
-        float absX = Mathf.Abs(scale.x);
-        scale.x = absX * (moveX > 0 ? 1 : -1);
-        transform.localScale = scale;
+        bool faceRight = moveX > 0f;
+
+        // Flip sprite only: keep Rigidbody/Collider stable to avoid "step" when turning.
+        if (sr != null)
+        {
+            sr.flipX = faceRight ? defaultFlipX : !defaultFlipX;
+        }
+
+        if (groundCheck != null)
+        {
+            Vector3 checkPos = groundCheck.localPosition;
+            checkPos.x = faceRight ? initialGroundCheckX : -initialGroundCheckX;
+            groundCheck.localPosition = checkPos;
+        }
+
+        if (attackPoint != null)
+        {
+            Vector3 attackPos = attackPoint.localPosition;
+            attackPos.x = faceRight ? initialAttackPointX : -initialAttackPointX;
+            attackPoint.localPosition = attackPos;
+        }
     }
 
     // ❤️ DAMAGE
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+
+        if (damageFlashUI == null)
+        {
+            damageFlashUI = FindFirstObjectByType<PlayerDamageFlashUI>();
+        }
+
+        damageFlashUI?.PlayFlash();
+
         if (currentHealth <= 0)
         {
             FindFirstObjectByType<GameManager>()?.PlayerDied();
