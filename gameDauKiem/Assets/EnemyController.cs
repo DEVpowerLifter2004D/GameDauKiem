@@ -1,10 +1,15 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class EnemyController : MonoBehaviour
 {
     [Header("Stats")]
     public int maxHealth = 3;
     private int currentHealth;
+
+    [Header("Health Bar UI")]
+    public Image healthFill;           // Kéo HealthFill vào đây
+    public float maxHealthFloat = 100f; // Số máu hiển thị trên thanh (thường để 100)
+    private float currentHealthFloat;
 
     [Header("Movement")]
     public float moveSpeed = 2f;
@@ -67,6 +72,18 @@ public class EnemyController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
+
+
+
+        currentHealthFloat = maxHealthFloat;
+        if (healthFill != null)
+            healthFill.fillAmount = 1f;
+
+
+        if (healthFill == null)
+            Debug.LogError("❌ healthFill chưa được assign trên " + gameObject.name);
+        else
+            Debug.Log("✅ healthFill OK: " + healthFill.name);
         // ✅ THAY ĐỔI: Gọi GameManager thay vì EnemySpawner
         GameManager gm = FindFirstObjectByType<GameManager>();
         if (gm != null)
@@ -302,7 +319,13 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        currentHealthFloat -= damage;                    // ← thêm dòng này
+
         Debug.Log($"💔 Enemy HP: {currentHealth}/{maxHealth}");
+
+        // ==================== THÊM PHẦN NÀY ====================
+        UpdateHealthBar();
+
 
         isHit = true;
         CancelInvoke(nameof(ResetHit));
@@ -315,7 +338,17 @@ public class EnemyController : MonoBehaviour
             Die();
         }
     }
-
+    // ==================== THÊM HÀM MỚI NÀY Ở CUỐI CLASS ====================
+    private void UpdateHealthBar()
+    {
+        if (healthFill != null)
+        {
+            // Dùng currentHealth/maxHealth thay vì float
+            healthFill.fillAmount = Mathf.Clamp01((float)currentHealth / (float)maxHealth);
+            Debug.Log($"Set fillAmount = {healthFill.fillAmount}");
+        }
+    }
+    // =====================================================================
     void ResetHit()
     {
         isHit = false;

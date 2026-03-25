@@ -78,6 +78,7 @@
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\RequiredAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GroupAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Enum.cs" />
+    <Compile Include="Assets\PauseManager.cs" />
     <Compile Include="Assets\BossHealthBarUI.cs" />
     <Compile Include="Assets\SceneTransitionTrigger.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowInInspectorAttribute.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxIfAttribute.cs" />
     <Compile Include="Assets\Code Map 04\BoarCharge.cs" />
+    <Compile Include="Assets\EnemyHealth1.cs" />
     <Compile Include="Assets\FakeFlag.cs" />
     <Compile Include="Assets\BossFireHP.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowIfAttribute.cs" />
@@ -136,6 +138,7 @@
     <None Include="Assets\Cainos\Third Party\Lucid Editor\License.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\UI_HealthPack\UI_HealthPack\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -172,6 +175,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Tiles\Free Pixel Art Forest\Free Pixel Art Forest\license.txt" />
+    <None Include="Assets\UI_HealthPack\UI_HealthPack\License.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Free Pixel Art Forest\Free Pixel Art Forest\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />

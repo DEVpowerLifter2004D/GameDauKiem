@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerCollisions : MonoBehaviour
 {
@@ -26,13 +26,17 @@ public class PlayerCollisions : MonoBehaviour
     {
         if (other == null) return;
 
+        Debug.Log($"🔍 Player touched: {other.name} | Tag: {other.tag}"); // ✅ THÊM DÒNG NÀY
+
         if (other.CompareTag("Key"))
         {
+            Debug.Log("🔑 KEY DETECTED!"); // ✅ THÊM DÒNG NÀY
+
             if (gameManager == null)
             {
                 gameManager = FindFirstObjectByType<GameManager>();
+                Debug.Log($"GameManager found: {gameManager != null}"); // ✅ THÊM DÒNG NÀY
             }
-
             gameManager?.PlayerCollectedKey();
             Destroy(other.gameObject);
             return;

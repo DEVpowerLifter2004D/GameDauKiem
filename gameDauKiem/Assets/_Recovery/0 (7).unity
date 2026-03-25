@@ -1260,6 +1260,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &116316797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1253069815441343487, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+  m_PrefabInstance: {fileID: 1198559871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &130725755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1562,6 +1567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 2
   patrolDistance: 3
   chaseRange: 5
@@ -8977,6 +8984,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 735225347}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &495654122
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2602402089255073966, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_Name
+      value: PauseManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2602402089255073966, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 319.2617
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 154.86859
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681624837978127987, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421544641776617214, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+      propertyPath: pauseCanvas
+      value: 
+      objectReference: {fileID: 116316797}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
 --- !u!1 &500151959
 GameObject:
   m_ObjectHideFlags: 0
@@ -40556,6 +40628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 2
   patrolDistance: 3
   chaseRange: 5
@@ -43525,6 +43599,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 4
   patrolDistance: 3
   chaseRange: 6
@@ -44325,6 +44401,139 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1198559871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1253069815441343487, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_Name
+      value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253069815441343487, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164785040722311189, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -791
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164785040722311189, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648386439749669098, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1951674797}
+    - target: {fileID: 4648386439749669098, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287208476949087207, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6513750097969284527, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1951674797}
+    - target: {fileID: 6513750097969284527, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467107305948946970, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1951674797}
+    - target: {fileID: 8467107305948946970, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ede37120b689a7f49a26ff4ea314d792, type: 3}
 --- !u!1 &1200113591
 GameObject:
   m_ObjectHideFlags: 0
@@ -45882,6 +46091,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 4
   patrolDistance: 3
   chaseRange: 6
@@ -48492,6 +48703,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 2
   patrolDistance: 3
   chaseRange: 5
@@ -51956,6 +52169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 2
   patrolDistance: 3
   chaseRange: 5
@@ -53728,6 +53943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 2
   patrolDistance: 3
   chaseRange: 5
@@ -56331,6 +56548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 4
   patrolDistance: 3
   chaseRange: 6
@@ -60205,6 +60424,17 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1951674797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7421544641776617214, guid: 6b3fc1a5c36578b4bb262bf356b6a285, type: 3}
+  m_PrefabInstance: {fileID: 495654122}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03010aed0e90b448129816ed73ecb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseManager
 --- !u!1 &1954291725
 GameObject:
   m_ObjectHideFlags: 0
@@ -61486,6 +61716,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
+  healthFill: {fileID: 0}
+  maxHealthFloat: 100
   moveSpeed: 4
   patrolDistance: 3
   chaseRange: 6
@@ -65396,3 +65628,5 @@ SceneRoots:
   - {fileID: 1991799829}
   - {fileID: 1725522494}
   - {fileID: 587691364}
+  - {fileID: 1198559871}
+  - {fileID: 495654122}

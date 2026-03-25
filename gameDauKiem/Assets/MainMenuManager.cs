@@ -8,7 +8,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(0);   // Tự động vào Round 1 (Level 1)
+        SceneManager.LoadScene(1);   // Tự động vào Round 1 (Level 1)
     }
 
     public void OpenLevelSelect()
