@@ -304,11 +304,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 3
-  moveSpeed: 2
-  patrolDistance: 3
-  chaseRange: 5
+  moveSpeed: 5
+  patrolDistance: 4
+  chaseRange: 8
   attackRange: 3
-  attackDamage: 1
+  attackDamage: 10
   attackCooldown: 1.5
   attackDuration: 0.8
   attackDamageDelay: 0.3

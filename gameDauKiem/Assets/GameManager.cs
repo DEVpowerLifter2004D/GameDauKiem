@@ -167,14 +167,14 @@ public class GameManager : MonoBehaviour
         Debug.Log("👑 Boss Wave Started!");
         UpdateWaveText("⚔ BOSS FIGHT ⚔");
 
-        // XÓA ENEMY
-        EnemyController[] enemies = FindObjectsOfType<EnemyController>();
-        foreach (var enemy in enemies)
-        {
-            Destroy(enemy.gameObject);
-        }
+        //// XÓA ENEMY
+        //EnemyController[] enemies = FindObjectsOfType<EnemyController>();
+        //foreach (var enemy in enemies)
+        //{
+        //    Destroy(enemy.gameObject);
+        //}
 
-        currentAliveCount = 0;
+        //currentAliveCount = 0;
 
         SpawnBoss();
         bossSpawned = true;

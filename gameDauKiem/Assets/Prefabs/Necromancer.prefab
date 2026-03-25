@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDropLoot
   healthPotionPrefab: {fileID: 3464946313779238489, guid: 9e79837296e58844b8775fd97427ac5f, type: 3}
-  dropChance: 74.7
+  dropChance: 100
   dropForce: 5
 --- !u!1 &7936375191139135010
 GameObject:
